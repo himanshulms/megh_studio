@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Megh Studio</title>
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/Sass/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid px-lg-5 px-3">
+      <div class="row py-4 align-items-center">
+        <div class="col-2 col-lg-1 px-md-0  gap-2">
+          <div type="button" class="d-flex align-items-center" data-bs-toggle="offcanvas" data-bs-target="#navigation" aria-controls="navigation">
+            <img src="assets/Images/icon/menu.png" class="img-fluid" />
+            <span class="text-base font-medium text-uppercase ps-2 pt-1 d-none d-lg-block">Menu</span>
+          </div>
+        </div>
+        <div class="col-8 col-lg-9 px-md-0 text-center">
+          <img src="assets/Images/icon/logo.png" class="img-fluid" />
+        </div>
+        <div class="col-2 col-lg-2 px-md-0 position-relative">
+          <div class="imgs-login d-flex align-items-center gap-4 justify-content-end">
+            <div class="search-wrapper  d-flex align-items-center justify-content-center">
+              <img src="assets/Images/icon/search.png" class="imgs-login-inner cursor-pointer"/>
+            </div>
+            <div class="wishlist-wrapper imgs-login-iner d-none d-lg-block align-items-center justify-content-center">
+              <a href="wishlist.html">
+                <img src="assets/Images/icon/wishlist.png" class="imgs-login-inner"/>
+              </a>
+            </div>              
+            <div class="custom-dropdown shopping-wrapper ">
+              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/Images/icon/shopping.png" class="imgs-login-inner cursor-pointer" alt="user"/>
+              </a>                
+              <div class="dropdown-menu rounded-0 mt-3 shopping-wrapper-inner">                
+                <div class="dropdown-menu-inner">
+                  <div class="product-mini-cart-wrapper">
+                    <p class="text-base font-medium text-primary mb-4">Shopping bag (1)</p>     
+                    <div class="product-mini-cart-details d-sm-flex gap-2 mb-5">
+                      <div class="product-mini-cart-img mb-2 mb-sm-0 d-flex align-items-center justify-content-center">
+                        <img src="assets/Images/icon/shoping-img.png" alt="cart-img img-fluid" />
+                      </div>
+                      <div class="product-mini-cart-data d-flex justify-content-between flex-column w-100">
+                        <div class="product-mini-cart-data-inner-content">
+                          <p class="text-sm font-normal text-primary font-rufina mb-0">Olive Half-Daisies Chiffon Lehenaga</p>
+                          <div class="quantity text-base font-medium">
+                            <span class="text-secondary text-sm font-medium me-2">Quantity:</span>
+                            <span class="text-primary text-sm font-medium">1</span>
+                          </div>
+                          <div class="size text-base font-medium">
+                            <span class="text-secondary text-sm font-medium me-2">Size:</span>
+                            <span class="text-primary text-sm font-medium">S</span>
+                          </div>
+                          <div class="color text-base font-medium">
+                            <span class="text-secondary text-sm font-medium me-2">Color:</span>
+                            <span class="text-primary text-sm font-medium">Pink</span>
+                          </div>
+                        </div>
+                        <div class="product-mini-cart-data-inner-amount w-100">   
+                          <div class="product-mini-cart-data d-flex justify-content-between text-base font-medium">
+                            <div class="product-mini-cart-data-inner-amount text-base font-medium text-primary d-flex align-items-center justify-content-between  w-100">
+                              <div class="text-primary">₹10,500.00</div>
+                              <div><a href="#" class="text-primary ">Remove</a></div>
+                            </div>
+                          </div>
+
+
+                        </div>                          
+                      </div>                        
+                    </div>
+                    <div class="text-base d-flex align-items-center justify-content-between w-100 mb-2">
+                      <div class="text-secondary text-sm font-semibold">Subtotal</div>
+                      <div class="text-primary text-sm font-medium">₹10,500.00</div>
+                    </div>
+                    <div class="text-base font-medium d-flex align-items-center justify-content-between w-100 mb-2">
+                      <div class="text-secondary text-sm font-medium">Delivery</div>
+                      <div class="text-primary text-sm font-medium">Free</div>
+                    </div>
+                    <div class="my-4 btns d-flex gap-4">
+                      <button class="btn btn-outline btn-sm border w-100">View shopping bag</button>                        
+                      <button class="btn btn-primary btn-sm w-100">Checkout</button>
+                    </div>
+                    <p class="mb-0 text-sm text-secondary font-medium text-center">Taxes included</p>
+                  </div>
+                </div>   
+              </div>
+            </div>
+            <div class="login-wrapper d-none d-lg-block">
+              <button class="btn btn-primary btn-sm min-width-115">Login</button>
+            </div>
+            <div class="user-wrapper d-none d-lg-block">
+              <div class="custom-dropdown">
+                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/Images/icon/user.png" class="imgs-login-inner cursor-pointer" alt="user"/>
+                </a>                
+                <ul class="dropdown-menu rounded-0 mt-3">
+                  <li class="text-xl font-normal dropdown-menu-inner dropdown-item py-2 px-4 font-rufina">Hello Dev</li>
+                  <li class="dropdown-menu-inner">
+                    <a class="dropdown-item py-2" href="order.html">                     
+                      <img src="assets/Images/icon/order.png" class="me-2" alt="order"/>Order
+                    </a>
+                  </li>
+                  <li class="dropdown-menu-inner">
+                    <a class="dropdown-item py-2" href="shipping.html">                    
+                      <img src="assets/Images/icon/shipping.png" class="me-2" alt="shipping"/>Shipping & Billing Address
+                    </a>
+                  </li>
+                  <li class="dropdown-menu-inner">
+                    <a class="dropdown-item py-2" href="download.html">
+                      <img src="assets/Images/icon/download.png" class="me-2" alt="download"/>Download
+                    </a>
+                  </li>
+                  <li class="dropdown-menu-inner">
+                    <a class="dropdown-item py-2" href="account.html">
+                      <img src="assets/Images/icon/account.png" class="me-2" alt="account"/>Account Details
+                    </a>
+                  </li>
+                  <li class="dropdown-menu-inner">
+                    <a class="dropdown-item py-2" href="coupon.html">
+                     <img src="assets/Images/icon/coupon.png" class="me-2" alt="coupon"/>My Coupon
+                    </a>
+                  </li>
+                  <li class="dropdown-menu-inner">
+                    <a class="dropdown-item py-2" href="index.html">
+                      <img src="assets/Images/icon/logout.png" class="me-2" alt="logout"/>Logout
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- missionary image  -->
+    <section class="missionary">
+      <div class="container-fluid px-0 missionary-wrapper">
+        <div class="full-width-row d-flex gap-1 mb-1">
+          <div class="col-60 col-img">
+            <figure class="figure w-100">
+              <img src="./assets/Images/sarees.png" class="figure-img img-fluid w-100" alt="product-image">
+              <figcaption class="figure-caption">
+                <button class="btn btn-primary min-width-190">Sarees</button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-40 col-img">
+            <figure class="figure w-100">
+              <img src="./assets/Images/kurta.png" class="figure-img img-fluid w-100" alt="product-image">
+              <figcaption class="figure-caption">
+                <button class="btn btn-primary min-width-190">Men’s wear</button>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="full-width-row d-flex gap-1 mb-1 flex-md-row-reverse">
+          <div class="col-60 col-img">
+            <figure class="figure w-100">
+              <img src="./assets/Images/lehengas.png" class="figure-img img-fluid w-100" alt="product-image">
+              <figcaption class="figure-caption">
+                <button class="btn btn-primary min-width-190">Lehengas</button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-40 col-img">
+            <figure class="figure w-100">
+              <img src="./assets/Images/ready.png" class="figure-img img-fluid w-100" alt="product-image">
+              <figcaption class="figure-caption">
+                <button class="btn btn-primary min-width-190">Ready to ship</button>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="full-width-row d-flex gap-1 mb-1">
+          <div class="col-60 col-img">
+            <figure class="figure w-100">
+              <img src="./assets/Images/twin.png" class="figure-img img-fluid w-100" alt="product-image">
+              <figcaption class="figure-caption">
+                <button class="btn btn-primary min-width-190">Let’s twin</button>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-40 col-img">
+            <figure class="figure w-100">
+              <img src="./assets/Images/suit.png" class="figure-img img-fluid w-100" alt="product-image">
+              <figcaption class="figure-caption">
+                <button class="btn btn-primary min-width-190">Suit sets</button>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bestsellers -->
+    <section class="bestsellers">
+      <div class="container-fluid px-lg-5 px-3">
+        <h2 class="main-heading text-center">Our Bestsellers</h2>
+
+        <!-- owl carousel -->
+        <div class="carousel">
+          <div id="owl-carousel" class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="card" style="width: 18rem;">
+                <div class="card-image">
+                  <img src="assets/Images/ombreBlue.png" alt="product-image">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title line-clamp-1 mb-1" title="Ombre Saree In Ash Blue">Ombre Saree In Ash Blue</h4>
+                  <p class="card-price line-clamp-1 mb-0">₹10,500.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card" style="width: 18rem;">
+                <div class="card-image">
+                  <img src="assets/Images/ombreYellow.png" alt="product-image">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title line-clamp-1 mb-1" title="Ombre saree in yellow">Ombre saree in yellow</h4>
+                  <p class="card-price line-clamp-1 mb-0">₹10,500.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card" style="width: 18rem;">
+                <div class="card-image">
+                  <img src="assets/Images/chiffonSaree.png" alt="product-image">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title line-clamp-1 mb-1" title="Lilac Daisies Chiffon Saree">Lilac Daisies Chiffon
+                    Saree
+                  </h4>
+                  <p class="card-price line-clamp-1 mb-0">₹10,500.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card" style="width: 18rem;">
+                <div class="card-image">
+                  <img src="assets/Images/daisiesChiffon.png" alt="product-image">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title line-clamp-1 mb-1" title="Olive Half-Daisies Chiffon">Olive Half-Daisies Chiffon
+                  </h4>
+                  <p class="card-price line-clamp-1 mb-0">₹10,500.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card" style="width: 18rem;">
+                <div class="card-image">
+                  <img src="assets/Images/ombreBlue.png" alt="product-image">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title line-clamp-1 mb-1" title="Ombre Saree In Ash Blue">Ombre Saree In Ash Blue</h4>
+                  <p class="card-price line-clamp-1 mb-0">₹10,500.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-image">
+                    <img src="assets/Images/ombreYellow.png" alt="product-image">
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title line-clamp-1 mb-1" title="Ombre saree in yellow">Ombre saree in yellow</h4>
+                    <p class="card-price line-clamp-1 mb-0">₹10,500.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card" style="width: 18rem;">
+                <div class="card-image">
+                  <img src="assets/Images/chiffonSaree.png" alt="product-image">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title line-clamp-1 mb-1" title="Lilac Daisies Chiffon Saree">Lilac Daisies Chiffon
+                    Saree
+                  </h4>
+                  <p class="card-price line-clamp-1 mb-0">₹10,500.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card" style="width: 18rem;">
+                <div class="card-image">
+                  <img src="assets/Images/daisiesChiffon.png" alt="product-image">
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title line-clamp-1 mb-1" title="Olive Half-Daisies Chiffon">Olive Half-Daisies Chiffon
+                  </h4>
+                  <p class="card-price line-clamp-1 mb-0">₹10,500.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-100 text-center pb-96">
+          <button class="btn btn-primary min-width-100 ">View all</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Western wear -->
+    <section class="main-banner">
+      <div class="container-fluid px-lg-5 px-3">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2 class="main-heading text-left pt-0 pb-3">Western wear</h2>
+              <p class="mb-0 text-2xl lheight-4xl font-normal pb-4">Meghstudio is a homegrown brand based in Udaipur, Rajasthan, Co-founded by <b>Meghna Doshi,</b> <b>Mahima Doshi</b> and <b>Kavisha Doshi.</b></p>
+              <p class="mb-0 text-lg lheight-4xl font-normal pb-0">Dressed | co-ord sets | shirts</p>
+            </div>
+            <div class="col-md-6">
+              <div class="image-wrapper ps-lg-4">
+                <img src="assets/Images/western.png" alt="img" class="w-100 ">
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- shop by edit -->
+    <section class="shop-by-edit">
+      <div class="container-fluid px-lg-5 px-3">
+        <h2 class="main-heading text-center">Shop by edit</h2>
+        <div class="missionary-wrapper">
+          <div class="full-width-row d-flex flex-wrap gap-3">
+            <div class="col-50 col-img px-0">
+              <figure class="figure w-100">
+                <img src="./assets/Images/haldi.png" class="figure-img img-fluid w-100" alt="product-image">
+                <figcaption class="figure-caption">
+                  <button class="btn btn-primary min-width-190">Sarees</button>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-50 col-img px-0">
+              <figure class="figure w-100">
+                <img src="./assets/Images/mehendi.png" class="figure-img img-fluid w-100" alt="product-image">
+                <figcaption class="figure-caption">
+                  <button class="btn btn-primary min-width-190">Men’s wear</button>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-50 col-img px-0">
+              <figure class="figure w-100">
+                <img src="./assets/Images/bridesmaid.png" class="figure-img img-fluid w-100" alt="product-image">
+                <figcaption class="figure-caption">
+                  <button class="btn btn-primary min-width-190">Men’s wear</button>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-50 col-img px-0">
+              <figure class="figure w-100">
+                <img src="./assets/Images/category.png" class="figure-img img-fluid w-100" alt="product-image">
+                <figcaption class="figure-caption">
+                  <button class="btn btn-primary min-width-190">Men’s wear</button>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us -->
+    <section class="about-section pt-96 pb-96">
+      <div class="container-fluid ps-5 pe-0">
+        <div class="row me-lg-0 d-flex flex-lg-nowrap flex-wrap align-items-center">
+          <div class="col-md-5 pe-lg-0">
+            <div class="image-wrapper">
+              <img src="assets/Images/about-us.png" alt="img" class="w-100">
+            </div>
+          </div>
+          <div class="col-md-7 px-lg-0">
+            <div class="bg-babypink pt-96 pb-52 px-68">
+              <h2 class="main-heading text-left pt-0 pb-3">About us</h2>
+              <p class="mb-0 text-2xl lheight-4xl font-normal pb-4">Meghstudio is a homegrown brand based in Udaipur, Rajasthan, Co-founded by <b>Meghna Doshi,</b> <b>Mahima Doshi</b> and <b>Kavisha Doshi.</b></p>
+              <p class="mb-0 text-lg lheight-4xl font-normal pb-0">Meghstudio was started in June 2020 with the love for art and creativity. All the 3 of us were always into something creative, little did we know, we would together start a brand one day.</p>
+              <div class="d-flex flex-no-wrap align-items-start justify-content-between pt-4 mt-2">
+                <button class="btn btn-primary min-width-190">Read more</button>
+                <img src="assets/Images/secondary-Logo.png" alt="logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- instagram feed -->
+    <section class="social-insta pb-96">
+      <div class="container-fluid">
+        <h3 class="sub-heading text-center">Let’s be social</h3>
+        <h2 class="main-heading text-center pt-0 pb-0">@meghstudio</h2>
+        <div class="pt-5"></div>
+        <div class="insta-carousel">
+          <div id="insta-carousel" class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="assets/Images/insta1.png" alt="insta-post">
+            </div>
+            <div class="item">
+              <img src="assets/Images/insta2.png" alt="insta-post">
+            </div>
+            <div class="item">
+              <img src="assets/Images/insta3.png" alt="insta-post">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="">
+    <div class="container-fluid ">
+
+    </div>
+  </footer>
+  <!-- ***********Navigation left Starts here need to add in all pages******** -->
+  <div class="offcanvas offcanvas-start navigation-left" tabindex="-1" id="navigation" aria-labelledby="navigationLabel">
+    <div class="offcanvas-header mb-4 p-0">
+      <h5 class="offcanvas-title text-base font-medium" id="navigationLabel">Menu</h5>
+      <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+      <div class="left-menu mt-3 ">         
+        <ul class="list-unstyled menu-data">
+          <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Home</a></li>
+          <li class="menu-item menu-item-has-children cursor-pointer">
+            Women <img src="assets/Images/icon/arrow-top.png" class="img-fluid" alt="arrow-top" width="15"/>
+            <ul class="sub-menu list-unstyled" style="display: none;">
+              <li>Saree</li>
+              <li>Lehenga</li>
+              <li>Dupattas</li>
+              <li>Suit set</li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children cursor-pointer">
+            Men's wear <img src="assets/Images/icon/arrow-top.png" class="img-fluid rotate-180" alt="arrow-top" width="15"/>
+            <ul class="sub-menu list-unstyled" style="display: none;">
+              <li>Saree</li>
+              <li>Lehenga</li>
+              <li>Dupattas</li>
+              <li>Suit set</li>
+            </ul>
+          </li>
+          <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Ready to ship</a></li>
+          <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Let’s twin</a></li>
+          <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Bestseller</a></li>
+          <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Haldi edit</a></li>
+          <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Mehendi edit</a></li>
+          <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Bridesmaid edit</a></li>
+         
+        </ul>
+        <div class="login-wrapper d-block d-lg-none">
+          <button class="btn btn-primary btn-sm min-width-115">Login</button>
+        </div>
+        <div class="user-wrapper d-block d-lg-none m-2">
+          <div class="custom-dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/Images/icon/user.png" class="img-fluid cursor-pointer" alt="user"/>
+            </a>                
+            <ul class="dropdown-menu rounded-0 mt-3">
+              <li class="text-xl font-normal dropdown-item py-2 px-4">Hello Dev</li>
+              <li>
+                <a class="dropdown-item py-2" href="order.html">                     
+                  <img src="assets/Images/icon/order.png" class="me-2" alt="order"/>Order
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item py-2" href="shipping.html">                    
+                  <img src="assets/Images/icon/shipping.png" class="me-2" alt="shipping"/>Shipping & Billing Address
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item py-2" href="download.html">
+                  <img src="assets/Images/icon/download.png" class="me-2" alt="download"/>Download
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item py-2" href="account.html">
+                  <img src="assets/Images/icon/account.png" class="me-2" alt="account"/>Account Details
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item py-2" href="coupon.html">
+                 <img src="assets/Images/icon/coupon.png" class="me-2" alt="coupon"/>
+                    My Coupon
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item py-2" href="index.html">
+                  <img src="assets/Images/icon/logout.png" class="me-2" alt="logout"/>Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="wishlist-wrapper d-block d-lg-none m-2 align-items-center justify-content-center">
+          <a href="wishlist.html">
+            <img src="assets/Images/icon/wishlist.png"/>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- ***********Navigation Ends here******** -->
+
+  <!-- slider script -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>
+    // carousel script start
+
+    $('#owl-carousel').owlCarousel({
+      loop: true,
+      margin: 30,
+      dots: false,
+      nav: true,
+      items: 4,
+    })
+    $('#insta-carousel').owlCarousel({
+      center: true,
+      loop: true,
+      margin: 0,
+      dots: false,
+      nav: true,
+      items: 1,
+      responsive:{
+          0: {
+            items: 1
+          },
+          600:{
+              items:3
+          }
+      }
+    })
+
+    // carousel script end
+
+    // toggle menu script start
+
+    $('.menu-item-has-children').click(function(){
+      $(this).toggleClass('open');
+      $(this).children('ul').toggle();
+    })
+
+    // toggle menu script end
+
+  </script>
+
+</body>
+
+</html>
