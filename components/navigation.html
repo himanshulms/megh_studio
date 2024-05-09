@@ -1,0 +1,126 @@
+<div class="offcanvas offcanvas-start navigation-left" tabindex="-1" id="navigation" aria-labelledby="navigationLabel">
+    <div class="offcanvas-header mb-4 p-0">
+        <h5 class="offcanvas-title text-base font-medium" id="navigationLabel">Menu</h5>
+        <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-0">
+        <div class="left-menu mt-3 ">
+            <ul class="list-unstyled menu-data">
+                <li class="menu-item">
+                    <a class="menu-item text-decoration-none" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="menu-item menu-item-has-children cursor-pointer">
+                    Women <img src="assets/images/icon/arrow-top.png" class="img-fluid" alt="arrow-top" width="15" />
+                    <ul class="sub-menu list-unstyled" style="display: none;">
+                        <li class="menu-item">
+                            <a class="menu-item text-decoration-none" href="saree.html">
+                                Saree
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item text-decoration-none" href="lehenga.html">
+                                Lehenga
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item text-decoration-none" href="dupattas.html">
+                                Dupattas
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item text-decoration-none" href="suitset.html">
+                                Suit set
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-has-children cursor-pointer">
+                    Men's wear <img src="assets/images/icon/arrow-top.png" class="img-fluid rotate-180" alt="arrow-top"
+                        width="15" />
+                    <ul class="sub-menu list-unstyled" style="display: none;">
+                        <li>Saree</li>
+                        <li>Lehenga</li>
+                        <li>Dupattas</li>
+                        <li>Suit set</li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Ready to ship</a></li>
+                <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Let’s twin</a></li>
+                <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Bestseller</a></li>
+                <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Haldi edit</a></li>
+                <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Mehendi edit</a></li>
+                <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Bridesmaid edit</a></li>
+
+            </ul>
+            <div class="login-wrapper d-block d-lg-none">
+                <button class="btn btn-primary btn-sm min-width-115">Login</button>
+            </div>
+            <div class="user-wrapper d-block d-lg-none m-2">
+                <div class="custom-dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/icon/user.png" class="img-fluid cursor-pointer" alt="user" />
+                    </a>
+                    <ul class="dropdown-menu rounded-0 mt-3">
+                        <li class="text-xl font-normal dropdown-item py-2 px-4">Hello Dev</li>
+                        <li>
+                            <a class="dropdown-item py-2" href="order.html">
+                                <img src="assets/images/icon/order.png" class="me-2" alt="order" />Order
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2" href="shipping.html">
+                                <img src="assets/images/icon/shipping.png" class="me-2" alt="shipping" />Shipping &
+                                Billing Address
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2" href="download.html">
+                                <img src="assets/images/icon/download.png" class="me-2" alt="download" />Download
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2" href="account.html">
+                                <img src="assets/images/icon/account.png" class="me-2" alt="account" />Account Details
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2" href="coupon.html">
+                                <img src="assets/images/icon/coupon.png" class="me-2" alt="coupon" />
+                                My Coupon
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item py-2" href="index.html">
+                                <img src="assets/images/icon/logout.png" class="me-2" alt="logout" />Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wishlist-wrapper d-block d-lg-none m-2 align-items-center justify-content-center">
+                <a href="wishlist.html">
+                    <img src="assets/images/icon/wishlist.png" />
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- navigation script -->
+
+<script>
+
+    $(function () {
+
+        $('.menu-item-has-children').click(function () {
+            $(this).toggleClass('open');
+            $(this).children('ul').toggle();
+        });
+
+    });
+
+</script>

@@ -1,23 +1,16 @@
-// toggle menu script start
-
-$('.menu-item-has-children').click(function() {
-    $(this).toggleClass('open');
-    $(this).children('ul').toggle();
-});
-
-// toggle menu script end
-
 // add header and footer
 
 $(function () {
+
     // Load head
-    $("#head").load("head.html");
+    $("#head").load("components/head.html");
 
     // Load header
-    $("#header").load("header.html");
-
+    $("#header").load("components/header.html");
+    
     // Load footer
-    $("#footer").load("footer.html");
+    $("#footer").load("components/footer.html");
+
 });
 
 // carousel script start
