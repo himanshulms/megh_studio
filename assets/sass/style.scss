@@ -592,7 +592,7 @@ section {
             overflow: hidden;
 
             img {
-                transition: all .33s;
+                transition: all 1s;
             }
 
             &:hover {
@@ -695,7 +695,7 @@ section {
                 }
 
                 img {
-                    transition: all .33s;
+                    transition: all 1s;
                     width: 100%;
 
                     &:hover {
@@ -840,7 +840,7 @@ section {
         padding-right: 24px;
 
         &::-webkit-scrollbar {
-            width: 1px;
+            width: 2px;
         }
 
         &::-webkit-scrollbar-track {
@@ -866,6 +866,10 @@ section {
         min-height: 670px;
         width: 100%;
         overflow: hidden;
+        img{
+            object-fit: cover;
+            width: 100%;
+        }
     }
 
     .product-description {
