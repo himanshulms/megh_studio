@@ -26,7 +26,7 @@ $stroke-color: #CDCDCD;
 $limegreen-color: #CECBA3;
 $babypink-color: #EACAC2;
 $ghost-white: #F8F6F4;
-$warning: #E03737;
+$danger: #E03737;
 
 // global color classes
 .text-primary {
@@ -57,8 +57,8 @@ $warning: #E03737;
     color: $ghost-white;
 }
 
-.text-warning{
-    color: $warning !important;
+.text-danger {
+    color: $danger !important;
 }
 
 // global background classes
@@ -91,8 +91,8 @@ $warning: #E03737;
     background-color: $ghost-white !important;
 }
 
-.bg-warning{
-    background-color: $warning !important;
+.bg-danger {
+    background-color: $danger !important;
 }
 
 // global font size variables 
@@ -348,6 +348,14 @@ $font-black: 900;
 }
 
 // min width
+.min-width-246 {
+    min-width: 246px;
+
+    @media (max-width:1024px) {
+        min-width: 190px;
+    }
+}
+
 .min-width-190 {
     min-width: 190px;
 
@@ -367,9 +375,9 @@ $font-black: 900;
 
 // line-clamp
 
-.line-clamp-3 {
+.line-clamp-1 {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -381,9 +389,9 @@ $font-black: 900;
     overflow: hidden;
 }
 
-.line-clamp-1 {
+.line-clamp-3 {
     display: -webkit-box;
-    -webkit-line-clamp: 1;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -449,6 +457,59 @@ $font-black: 900;
     &::before {
         content: '';
         position: absolute;
+        max-width: 500px;
+        width: 100%;
+        max-height: 170px;
+        height: 100%;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        background-image: linear-gradient(to right, #eee8e400, #D8CEC1);
+    }
+
+    @media (max-width:1024px) {
+        padding: 40px 0;
+    }
+
+    .image-wrapper {
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url(../images/square.png);
+            width: 70px;
+            height: 70px;
+            left: auto;
+            right: 0px;
+            top: 0px;
+            position: absolute;
+            z-index: 0;
+        }
+
+        img {
+            position: relative;
+        }
+    }
+
+    &.collection-banner {
+        .image-wrapper {
+            &::before {
+                top: 30px;
+            }
+        }
+    }
+}
+
+// main banner end
+
+.western-wear {
+    background-color: $button-color;
+    padding: 60px 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
         max-width: 728px;
         width: 100%;
         max-height: 337px;
@@ -472,7 +533,7 @@ $font-black: 900;
             width: 70px;
             height: 70px;
             left: auto;
-            right: -20px;
+            right: 0px;
             top: -20px;
             position: absolute;
             z-index: 0;
@@ -604,7 +665,8 @@ section {
 
 // owl carousel start
 
-.carousel, .collection {
+.carousel,
+.collection {
     position: relative;
     margin-bottom: 12px;
 
@@ -621,7 +683,7 @@ section {
             .card-image {
                 overflow: hidden;
 
-                .badge{
+                .badge {
                     position: absolute;
                     top: 24px;
                     left: 24px;
@@ -634,6 +696,7 @@ section {
 
                 img {
                     transition: all .33s;
+                    width: 100%;
 
                     &:hover {
                         transform: scale(1.1);
@@ -747,16 +810,17 @@ section {
 
 // filter design start
 
-.filter{
-    .count{
+.filter {
+    .count {
         position: relative;
-        &::before{
+
+        &::before {
             content: '';
             position: absolute;
             width: 9px;
             height: 9px;
             border-radius: 100%;
-            background-color: $warning;
+            background-color: $danger;
             left: auto;
             right: -3px;
         }
@@ -764,6 +828,140 @@ section {
 }
 
 // filter design end
+
+// product details start
+
+.product-details {
+    .product-slider {
+        gap: 12px;
+        height: 670px;
+        width: 190px;
+        overflow-y: scroll;
+        padding-right: 24px;
+
+        &::-webkit-scrollbar {
+            width: 1px;
+        }
+
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px $button-color;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $secondary-color;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            opacity: 0.2;
+            &.active{
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .product-image{
+        min-height: 670px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .product-description {
+        .product-color-variants {
+            .color-variants {
+                width: 24px;
+                height: 24px;
+
+                &.active,
+                &:hover {
+                    border: 1px solid $secondary-color;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .product-size-variants {
+            .size-variants {
+                min-width: 30px;
+                height: 30px;
+                color: $secondary-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &.active,
+                &:hover {
+                    background-color: $button-color;
+                    color: $primary-color;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .quantity {
+            .quantity-wrapper {
+                gap: 12px;
+
+                input {
+                    min-width: 17px;
+                    max-width: 17px;
+                    font-size: $text-sm;
+                    font-weight: $font-normal;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    padding: 0;
+                    line-height: $lheight-sm;
+
+                    &:hover,
+                    &:active,
+                    &:focus,
+                    &:focus-visible {
+                        border: none;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+
+                input[type=number]::-webkit-inner-spin-button,
+                input[type=number]::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                }
+
+                .count {
+                    border: 1px solid $stroke-color;
+                    border-radius: 10px;
+                    padding: 8px 4px;
+
+                    .dec {
+                        height: 4px;
+                        display: grid;
+                        margin-bottom: 5px;
+                    }
+
+                    .inc {
+                        height: 4px;
+                        display: grid;
+                    }
+                }
+            }
+        }
+
+        .wishlist-btn {
+            width: 36px;
+            height: 36px;
+            padding: 0;
+
+            img {
+                width: 24px;
+            }
+        }
+    }
+}
+
+// product details end
 
 /********Header Css starts here*******/
 
