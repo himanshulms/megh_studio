@@ -7,7 +7,7 @@ $(function () {
 
     // Load header
     $("#header").load("components/header.html");
-    
+
     // Load footer
     $("#footer").load("components/footer.html");
 
@@ -21,6 +21,14 @@ $('#owl-carousel').owlCarousel({
     dots: false,
     nav: true,
     items: 4,
+    responsive: {
+        0: {
+            items: 2
+        },
+        600: {
+            items: 4
+        }
+    }
 })
 
 $('#insta-carousel').owlCarousel({
@@ -28,7 +36,7 @@ $('#insta-carousel').owlCarousel({
     loop: true,
     margin: 0,
     dots: false,
-    nav: true,
+    nav: false,
     items: 1,
     autoHeight: false,
     responsive: {
@@ -40,5 +48,6 @@ $('#insta-carousel').owlCarousel({
         }
     }
 });
+
 
 // carousel script end
