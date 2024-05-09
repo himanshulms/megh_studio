@@ -16,25 +16,35 @@
                     Password<span class="ps-1">*</span>
                 </label>
                 <input type="password" class="form-control pe-5" id="exampleFormControlInput1" placeholder="Password">
-                <img src="assets/images/icon/visible.png" class="position-absolute eye-visible" />
+                <img src="assets/images/icon/visible.png" class="position-absolute eye-visible cursor-pointer"  />
+                <img src="assets/images/icon/not-visible.png" class="position-absolute eye-visible cursor-pointer" style="display:none;"  />
+
             </div>
             <div class="remindme-lostpass d-flex align-items-center justify-content-between mb-4">
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck1">
-                    <label class="form-check-label text-sm font-medium text-secondary" for="exampleCheck1">Remained
+                    <label class="form-check-label text-sm font-medium text-secondary" for="exampleCheck1">Remind
                         me</label>
                 </div>
-                <div>
+                <div type="button" class="login-wrapper" data-bs-toggle="offcanvas" data-bs-target="#reset" aria-controls="reset">
                     <a href="#" class="text-sm font-medium text-primary">Lost your password?</a>
                 </div>
             </div>
-            <div class="mb-4 btns d-flex gap-4">
-                <button class="btn btn-outline btn-sm border w-100">Cancel</button>
-                <button class="btn btn-primary btn-sm w-100">Login</button>
+            <div class="mb-4 btns d-md-flex gap-4">
+                <button class="btn btn-outline btn-sm min-width-115 w-100 mb-2 mb-sm-0">Cancel</button>
+                <button class="btn btn-primary btn-sm min-width-115 w-100  mb-2 mb-sm-0">Login</button>
             </div>
-            <div>
+            <div type="button" class="login-wrapper" data-bs-toggle="offcanvas" data-bs-target="#registration" aria-controls="login">
                 <a href="#" class="text-sm font-medium text-primary">Don't have an account?</a>
             </div>
+
         </div>
     </div>
 </div>
+
+<script>
+     /******Eye icon toggle*********/
+     $('.eye-visible').click(function(){
+            $('.eye-visible').toggle();
+         });
+</script>

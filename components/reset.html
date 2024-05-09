@@ -1,0 +1,40 @@
+<div class="offcanvas offcanvas-end navigation-left login-right" id="reset" aria-labelledby="resetLabel">
+    <div class="offcanvas-header mb-4 p-0">
+        <h5 class="offcanvas-title text-2xl font-normal font-rufina" id="resetLabel">Reset password</h5>
+        <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body mb-40 p-0">
+        <div class="login-details mt-40">
+            <div class="mb-4">
+                <p class="text-sm text-primary font-medium">
+                    Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.
+                </p>
+            </div>
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label text-sm font-medium text-secondary">
+                    User or Email Address<span class="ps-1">*</span>
+                </label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="dev@gmail.com">
+            </div>
+            <div class="mb-4 btns d-md-flex gap-4">
+                <button class="btn btn-outline btn-sm min-width-115 w-100 mb-2 mb-sm-0">Cancel</button>
+                <button class="btn btn-primary btn-sm min-width-115 w-100  mb-2 mb-sm-0">Reset password</button>
+            </div>
+            <div type="button" class="login-wrapper d-none d-lg-block" data-bs-toggle="offcanvas"
+            data-bs-target="#login" aria-controls="login">
+                <a href="#" class="text-sm font-medium text-primary">Back to login</a>
+            </div>       
+            <!-- /****************Added in the new page and remove it *********-->
+            <div type="button" class="login-wrapper mb-2" data-bs-toggle="offcanvas" data-bs-target="#productdetails" aria-controls="productdetails">
+                <div class="text-sm font-medium text-primary">Product details page</div>
+            </div> 
+            <div type="button" class="login-wrapper" data-bs-toggle="offcanvas" data-bs-target="#delivery" aria-controls="delivery">
+                <div class="text-sm font-medium text-primary">Delivery & returns</div>
+            </div> 
+            
+            <!-- /****************Added in the new page and remove it *********-->
+        </div>
+    </div>
+</div>
+
+ 

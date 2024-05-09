@@ -4,7 +4,7 @@
         <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body p-0">
-        <div class="left-menu mt-3 ">
+        <div class="left-menu">
             <ul class="list-unstyled menu-data">
                 <li class="menu-item">
                     <a class="menu-item text-decoration-none" href="#">
@@ -15,22 +15,22 @@
                     Women <img src="assets/images/icon/arrow-top.png" class="img-fluid" alt="arrow-top" width="15" />
                     <ul class="sub-menu list-unstyled" style="display: none;">
                         <li class="menu-item">
-                            <a class="menu-item text-decoration-none" href="saree.html">
+                            <a class="text-decoration-none" href="saree.html">
                                 Saree
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-item text-decoration-none" href="lehenga.html">
+                            <a class="text-decoration-none" href="lehenga.html">
                                 Lehenga
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-item text-decoration-none" href="dupattas.html">
+                            <a class="text-decoration-none" href="dupattas.html">
                                 Dupattas
                             </a>
                         </li>
                         <li class="menu-item">
-                            <a class="menu-item text-decoration-none" href="suitset.html">
+                            <a class="text-decoration-none" href="suitset.html">
                                 Suit set
                             </a>
                         </li>
@@ -40,27 +40,56 @@
                     Men's wear <img src="assets/images/icon/arrow-top.png" class="img-fluid rotate-180" alt="arrow-top"
                         width="15" />
                     <ul class="sub-menu list-unstyled" style="display: none;">
-                        <li>Saree</li>
-                        <li>Lehenga</li>
-                        <li>Dupattas</li>
-                        <li>Suit set</li>
+                        <li class="menu-item">
+                            <a class="text-decoration-none" href="saree.html">
+                                Saree
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="text-decoration-none" href="lehenga.html">
+                                Lehenga
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="text-decoration-none" href="dupattas.html">
+                                Dupattas
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="text-decoration-none" href="suitset.html">
+                                Suit set
+                            </a>
+                        </li>
                     </ul>
-                </li>
                 <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Ready to ship</a></li>
-                <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Let’s twin</a></li>
+                <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Let's twin</a></li>
                 <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Bestseller</a></li>
                 <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Haldi edit</a></li>
                 <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Mehendi edit</a></li>
                 <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Bridesmaid edit</a></li>
-
+                <hr class="mt-0 mb-3  d-block d-lg-none">
+                <li class="menu-item d-block d-lg-none">
+                    <a class="text-primary text-decoration-none" href="order.hhtml">Profile</a>
+                </li>
+                <li class="menu-item d-block d-lg-none">
+                    <a class="text-primary text-decoration-none" href="wishlist.html">Wishlist</a>
+                </li>
+                <li class="menu-item">
+                    <div type="button" class="login-wrapper d-block d-lg-none" data-bs-toggle="offcanvas"
+                    data-bs-target="#login" aria-controls="login">
+                    <button class="btn btn-primary btn-sm min-width-115">Login</button>
+                </div>
+                </li>
+                
             </ul>
+<!--            
             <div class="login-wrapper d-block d-lg-none">
                 <button class="btn btn-primary btn-sm min-width-115">Login</button>
-            </div>
-            <div class="user-wrapper d-block d-lg-none m-2">
+            </div> -->
+            <!-- <div class="user-wrapper d-block d-lg-none m-2">
                 <div class="custom-dropdown">
-                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="assets/images/icon/user.png" class="img-fluid cursor-pointer" alt="user" />
+                    <a class="dropdown-toggle text-primary text-decoration-none" href="order.hhtml">
+                        Profile
                     </a>
                     <ul class="dropdown-menu rounded-0 mt-3">
                         <li class="text-xl font-normal dropdown-item py-2 px-4">Hello Dev</li>
@@ -98,12 +127,12 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="wishlist-wrapper d-block d-lg-none m-2 align-items-center justify-content-center">
+            </div> -->
+            <!-- <div class="wishlist-wrapper d-block d-lg-none m-2 align-items-center justify-content-center">
                 <a href="wishlist.html">
                     <img src="assets/images/icon/wishlist.png" />
                 </a>
-            </div>
+            </div> -->
 
         </div>
     </div>
@@ -120,6 +149,8 @@
             $(this).toggleClass('open');
             $(this).children('ul').toggle();
         });
+
+        
 
     });
 
