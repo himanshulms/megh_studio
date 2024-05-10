@@ -886,6 +886,29 @@ section .main-heading {
   border: none;
 }
 
+.checkout-section .checkout-form {
+  display: flex;
+  gap: 24px;
+}
+.checkout-section .checkout-form .form-field {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  .checkout-section .checkout-form .form-field {
+    width: 100%;
+  }
+}
+.checkout-section .checkout-form .form-field input.form-control.input-lg {
+  min-height: 48px !important;
+}
+.checkout-section .checkout-page-details {
+  border: 1px solid #CDCDCD;
+  padding: 16px;
+}
+.checkout-section .checkout-page-details .checout-details {
+  border-top: 1px solid #CDCDCD;
+}
+
 /********Header Css starts here*******/
 @media (max-width: 992px) {
   .main-logo {
@@ -989,16 +1012,19 @@ section .main-heading {
 .navigation-left.login-right.filter .offcanvas-header {
   padding: 36px 36px 0 36px;
 }
-.navigation-left.login-right.filter .accordion, .navigation-left.login-right.filter .btns {
+.navigation-left.login-right.filter .accordion,
+.navigation-left.login-right.filter .btns {
   padding: 12px 36px;
   box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.1);
 }
 
-.sortby-dropdown ul.nav-dropdown li.dropdown a.nav-link.dropdown-toggle, .custom-dropdown-data ul.nav-dropdown li.dropdown a.nav-link.dropdown-toggle {
+.sortby-dropdown ul.nav-dropdown li.dropdown a.nav-link.dropdown-toggle,
+.custom-dropdown-data ul.nav-dropdown li.dropdown a.nav-link.dropdown-toggle {
   position: relative;
   padding: 0;
 }
-.sortby-dropdown ul.nav-dropdown li.dropdown a.nav-link.dropdown-toggle::after, .custom-dropdown-data ul.nav-dropdown li.dropdown a.nav-link.dropdown-toggle::after {
+.sortby-dropdown ul.nav-dropdown li.dropdown a.nav-link.dropdown-toggle::after,
+.custom-dropdown-data ul.nav-dropdown li.dropdown a.nav-link.dropdown-toggle::after {
   background-image: url(../images/icon/arrow-bottom.png) !important;
   border: 0;
   content: "";
@@ -1008,14 +1034,19 @@ section .main-heading {
   height: 20px;
   right: -21px;
 }
-.sortby-dropdown ul.nav-dropdown li.dropdown ul.dropdown-menu, .custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu {
+.sortby-dropdown ul.nav-dropdown li.dropdown ul.dropdown-menu,
+.custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu {
   width: 244px;
   padding: 0;
 }
-.sortby-dropdown ul.nav-dropdown li.dropdown ul.dropdown-menu li, .custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu li {
+.sortby-dropdown ul.nav-dropdown li.dropdown ul.dropdown-menu li,
+.custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu li {
   padding: 12px;
 }
-.sortby-dropdown ul.nav-dropdown li.dropdown ul.dropdown-menu li:hover, .sortby-dropdown ul.nav-dropdown li.dropdown ul.dropdown-menu li:active, .sortby-dropdown ul.nav-dropdown li.dropdown ul.dropdown-menu li:focus, .custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu li:hover, .custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu li:active, .custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu li:focus {
+.sortby-dropdown ul.nav-dropdown li.dropdown ul.dropdown-menu li:hover, .sortby-dropdown ul.nav-dropdown li.dropdown ul.dropdown-menu li:active, .sortby-dropdown ul.nav-dropdown li.dropdown ul.dropdown-menu li:focus,
+.custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu li:hover,
+.custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu li:active,
+.custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu li:focus {
   background-color: #EEE8E4;
 }
 
@@ -1035,7 +1066,8 @@ section .main-heading {
 }
 
 /********Header Css ends here********/
-.login-details .eye-visible, .login-details .eye-visible1 {
+.login-details .eye-visible,
+.login-details .eye-visible1 {
   bottom: 8px;
   right: 10px;
 }
@@ -1320,9 +1352,15 @@ section .main-heading {
   padding: 36px !important;
 }
 
-.form-control:focus, button:focus:not(:focus-visible), .btn:focus,
+.form-control:focus,
+button:focus:not(:focus-visible),
+.btn:focus,
 .form-check-input:focus,
-.btn-check:active + .btn-primary:focus, .btn-check:checked + .btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show > .btn-primary.dropdown-toggle:focus {
+.btn-check:active + .btn-primary:focus,
+.btn-check:checked + .btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
   border-color: #CDCDCD;
   outline: 0;
   box-shadow: none;
@@ -1343,7 +1381,8 @@ section .main-heading {
   filter: none;
 }
 
-.form-check-input, .form-check-input:focus {
+.form-check-input,
+.form-check-input:focus {
   border: 1px solid #706860;
 }
 
