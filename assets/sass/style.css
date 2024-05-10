@@ -670,14 +670,11 @@ section .main-heading {
     text-align: left;
   }
 }
-.carousel .owl-nav,
-.collection .owl-nav {
-  opacity: 0;
+.carousel .owl-nav .owl-prev,
+.collection .owl-nav .owl-prev {
   position: absolute;
-  height: calc(100% - 170px);
-  width: 100%;
-  top: 0;
-  transition: opacity 0.33s;
+  left: 0;
+  top: 37%;
 }
 .carousel .owl-nav .owl-prev span,
 .collection .owl-nav .owl-prev span {
@@ -694,7 +691,10 @@ section .main-heading {
 }
 .carousel .owl-nav .owl-next,
 .collection .owl-nav .owl-next {
-  height: 100%;
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 37%;
 }
 .carousel .owl-nav .owl-next span,
 .collection .owl-nav .owl-next span {
