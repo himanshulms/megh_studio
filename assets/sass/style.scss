@@ -1079,7 +1079,11 @@ section {
 /********Header Css starts here*******/
 
 // custom drop down scss start
-
+.main-logo {
+    @media (max-width: 992px) {
+        width: 100px;
+    }
+}
 .custom-dropdown {
     .dropdown-toggle {
         &::after {
@@ -1201,6 +1205,48 @@ section {
             min-width: 100%;
             width: 100%;
         }
+        &.filter {
+            .offcanvas-header {
+                padding: 36px 36px 0 36px;
+            }
+            .accordion, .btns {
+                padding: 12px 36px;
+                box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.10);;
+            }
+
+        }
+    }
+}
+.sortby-dropdown {
+    ul.nav-tabs {
+        li.dropdown {
+            a.nav-link {
+                &.dropdown-toggle {
+                    position: relative;padding:0;
+                    &::after {
+                        background-image: url(../images/icon/arrow-bottom.png) !important;
+                        border: 0;
+                        content: "";
+                        position: absolute;
+                        top: -2px;
+                        width: 20px;
+                        height: 20px;
+                        right: -21px;
+                    }
+                }
+            }
+            ul.dropdown-menu {
+                width: 244px;padding: 0;
+                 li {
+                    padding: 12px;
+                    &:hover, &:active, &:focus {
+                    background-color: $button-color;
+                    
+                    
+                }
+            }
+        }
+    }
     }
 }
 
@@ -1240,7 +1286,7 @@ section {
     }
 }
 /*********Footer starts here********/
-footer {
+.footer-wrap {
     .footer-top {
         ul {
             li {
@@ -1261,7 +1307,7 @@ footer {
                     top: 5px;
                     right: -1px;
 
-                    @media (max-width: 575px) {
+                    @media (max-width: 992px) {
                         content: unset;
                     }
 
@@ -1285,34 +1331,46 @@ footer {
 
     .bg-footer {
         padding: 40px;
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             padding: 10px;
         }
+        .footer-data2 {
+            &.border-left-right {
+                border-left: 1px solid $stroke-color;
+                border-right: 1px solid $stroke-color;
 
-        .border-left-right {
-            border-left: 1px solid $stroke-color;
-            border-right: 1px solid $stroke-color;
+                @media (max-width: 992px) {
+                    border: 0;
+                }
 
-            @media (max-width: 992px) {
-                border: 0;
-            }
-
-        }
-
-        .email-input {
-            &.w-255 {
-                width: 255px;
-                min-width: 255px;
-            }
-
-            input {
-                padding-right: 32px;
-            }
-
-            img {
-                right: 10px;
             }
         }
+        .footer-data3 {        
+            .email-input {
+                &.w-255 {
+                    width: 255px;
+                    min-width: 255px;
+                }
+    
+                input {
+                    padding-right: 40px;
+                    z-index: 1;
+                }
+    
+                button {
+                    right: 10px;z-index: 9;width:30px;height: 25px;
+                    &:focus:not(:focus-visible), &:focus {
+                        border-color: transparent;z-index: 1;
+                    }
+                }
+            }
+            .mail-link {
+                @media (max-width: 1440px) {
+                    word-break: break-all;
+                }
+            }
+        }
+        
     }
 }
 
@@ -1471,6 +1529,9 @@ footer {
 .w-290 {
     width: 290px;
     min-width: 290px;
+    @media (max-width: 1200px) {
+        width: 230px;min-width: 230px;
+    }
 }
 .w-30 {
     width: 30px;
@@ -1490,7 +1551,9 @@ footer {
 .mb-12 {
     margin-bottom: 12px;
 }
-
+.p-36 {
+    padding: 36px !important;
+}
 .form-control:focus, button:focus:not(:focus-visible), .btn:focus,
 .form-check-input:focus, 
 .btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
@@ -1515,6 +1578,9 @@ footer {
 }
 ::placeholder {
     color: $secondary-color;
+}
+.bottom-0 {
+    bottom: 0;
 }
 /********Accordion starts here***********/
 .accordion {

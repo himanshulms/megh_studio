@@ -1,11 +1,10 @@
-<div class="offcanvas offcanvas-start navigation-left login-right" id="filter" aria-labelledby="filterLabel">
-    <div class="offcanvas-header mb-4 p-0">
+<div class="offcanvas offcanvas-start navigation-left login-right filter p-0" id="filter" aria-labelledby="filterLabel">
+    <div class="offcanvas-header mb-4">
         <h5 class="offcanvas-title text-2xl font-normal font-rufina" id="filterLabel">Show filters</h5>
         <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body mb-40 p-0">
-        <div class="login-details">
-
+    <div class="offcanvas-body position-relative p-0">
+        <div class="login-details h-100 d-flex justify-content-between flex-column">
             <div class="accordion accordion-flush accordion1" id="accordionFlushExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
@@ -81,17 +80,11 @@
                     <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">Placeholder content for this accordion, which is intended to demonstrate the class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                   </div>
                 </div>
-              </div>
-
-
-
-
-            <div class="mb-4 btns d-md-flex gap-4 position-absolute text-center w-75">
-                <button class="btn btn-outline btn-sm min-width-115 w-100 mb-2 mb-sm-0">Cancel</button>
-                <button class="btn btn-primary btn-sm min-width-115 w-100  mb-2 mb-sm-0">Login</button>
             </div>
-          
-
+            <div class="btns d-lg-flex d-grid gap-4 bg-white text-center w-100 bottom-0">
+                <button class="btn btn-outline btn-sm w-100">Reset</button>
+                <button class="btn btn-primary btn-sm w-100">Apply</button>
+            </div>        
         </div>
     </div>
 </div>
