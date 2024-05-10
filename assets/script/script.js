@@ -51,3 +51,21 @@ $('#insta-carousel').owlCarousel({
 
 
 // carousel script end
+
+
+$(function () {
+    
+    $('.menu-item-has-children').click(function () {
+        $(this).toggleClass('open');
+        $(this).children('ul').toggle();
+    });
+
+    $('.eye-visible').click(function(){
+        $('.eye-visible').toggle();
+    });
+
+    $('.eye-visible1').click(function(){
+        $('.eye-visible1').toggle();
+    });
+
+});

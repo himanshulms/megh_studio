@@ -18,7 +18,148 @@
 
 <body>
   <!-- use sepreate file to edit header do not remove it -->
-  <header id="header"></header>
+  <header id="header">
+    <div class="container-fluid px-lg-5 px-3">
+      <div class="row py-4 align-items-center">
+          <div class="col-2 col-lg-1 px-md-0  gap-2">
+              <div type="button" class="d-flex align-items-center" data-bs-toggle="offcanvas" data-bs-target="#navigation"
+                  aria-controls="navigation">
+                  <img src="assets/images/icon/menu.png" class="img-fluid" />
+                  <span class="text-base font-medium text-uppercase ps-2 pt-1 d-none d-lg-block">Menu</span>
+              </div>
+          </div>
+          <div class="col-7 col-lg-9 px-md-0 text-center">
+              <a href="index.html">
+                  <img src="assets/images/icon/logo.png" class="img-fluid main-logo" alt="logo"/>
+              </a>
+          </div>
+          <div class="col-3 col-lg-2 px-md-0 position-relative">
+              <div class="imgs-login d-flex align-items-center gap-4 justify-content-end">
+                  <div class="search-wrapper  d-flex align-items-center justify-content-center">
+                      <img src="assets/images/icon/search.png" class="imgs-login-inner cursor-pointer" />
+                  </div>
+                  <div
+                      class="wishlist-wrapper imgs-login-iner d-none d-lg-block align-items-center justify-content-center">
+                      <a href="wishlist.html">
+                          <img src="assets/images/icon/wishlist.png" class="imgs-login-inner" />
+                      </a>
+                  </div>
+                  <div class="custom-dropdown shopping-wrapper ">
+                      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="assets/images/icon/shopping.png" class="imgs-login-inner cursor-pointer" alt="user" />
+                      </a>
+                      <div class="dropdown-menu rounded-0 mt-3 shopping-wrapper-inner">
+                          <div class="dropdown-menu-inner">
+                              <div class="product-mini-cart-wrapper">
+                                  <p class="text-base font-medium text-primary mb-4">Shopping bag (1)</p>
+                                  <div class="product-mini-cart-details d-sm-flex gap-2 mb-5">
+                                      <div
+                                          class="product-mini-cart-img mb-2 mb-sm-0 d-flex align-items-center justify-content-center">
+                                          <img src="assets/images/icon/shoping-img.png" alt="cart-img img-fluid" />
+                                      </div>
+                                      <div
+                                          class="product-mini-cart-data d-flex justify-content-between flex-column w-100">
+                                          <div class="product-mini-cart-data-inner-content">
+                                              <p class="text-sm font-normal text-primary font-rufina mb-0">Olive
+                                                  Half-Daisies Chiffon
+                                                  Lehenaga</p>
+                                              <div class="quantity text-base font-medium">
+                                                  <span class="text-secondary text-sm font-medium me-2">Quantity:</span>
+                                                  <span class="text-primary text-sm font-medium">1</span>
+                                              </div>
+                                              <div class="size text-base font-medium">
+                                                  <span class="text-secondary text-sm font-medium me-2">Size:</span>
+                                                  <span class="text-primary text-sm font-medium">S</span>
+                                              </div>
+                                              <div class="color text-base font-medium">
+                                                  <span class="text-secondary text-sm font-medium me-2">Color:</span>
+                                                  <span class="text-primary text-sm font-medium">Pink</span>
+                                              </div>
+                                          </div>
+                                          <div class="product-mini-cart-data-inner-amount w-100">
+                                              <div
+                                                  class="product-mini-cart-data d-flex justify-content-between text-base font-medium">
+                                                  <div
+                                                      class="product-mini-cart-data-inner-amount text-base font-medium text-primary d-flex align-items-center justify-content-between  w-100">
+                                                      <div class="text-primary">₹10,500.00</div>
+                                                      <div><a href="#" class="text-primary ">Remove</a></div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="text-base d-flex align-items-center justify-content-between w-100 mb-2">
+                                      <div class="text-secondary text-sm font-semibold">Subtotal</div>
+                                      <div class="text-primary text-sm font-medium">₹10,500.00</div>
+                                  </div>
+                                  <div
+                                      class="text-base font-medium d-flex align-items-center justify-content-between w-100 mb-2">
+                                      <div class="text-secondary text-sm font-medium">Delivery</div>
+                                      <div class="text-primary text-sm font-medium">Free</div>
+                                  </div>
+                                  <div class="my-4 btns d-flex gap-4">
+                                      <a href="cart.html" class="btn btn-outline btn-sm w-100 text-decoration-none">View shopping bag</a>
+                                      <a href="checkout.html" class="btn btn-primary btn-sm w-100 text-decoration-none">Checkout</a>
+                                  </div>
+                                  <p class="mb-0 text-sm text-secondary font-medium text-center">Taxes included</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div type="button" class="login-wrapper d-none d-lg-block" data-bs-toggle="offcanvas"
+                      data-bs-target="#login" aria-controls="login">
+                      <button class="btn btn-primary btn-sm min-width-115 btn-animation"><span>Login</span></button>
+                  </div>
+                  <div class="user-wrapper d-none d-lg-block">
+                      <div class="custom-dropdown">
+                          <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <img src="assets/images/icon/user.png" class="imgs-login-inner cursor-pointer" alt="user" />
+                          </a>
+                          <ul class="dropdown-menu rounded-0 mt-3">
+                              <li class="text-xl font-normal dropdown-menu-inner dropdown-item py-2 px-4 font-rufina">
+                                  Hello Dev</li>
+                              <li class="dropdown-menu-inner">
+                                  <a class="dropdown-item py-2" href="order.html">
+                                      <img src="assets/images/icon/order.png" class="me-2" alt="order" />Order
+                                  </a>
+                              </li>
+                              <li class="dropdown-menu-inner">
+                                  <a class="dropdown-item py-2" href="shipping.html">
+                                      <img src="assets/images/icon/shipping.png" class="me-2" alt="shipping" />Shipping &
+                                      Billing
+                                      Address
+                                  </a>
+                              </li>
+                              <li class="dropdown-menu-inner">
+                                  <a class="dropdown-item py-2" href="download.html">
+                                      <img src="assets/images/icon/download.png" class="me-2" alt="download" />Download
+                                  </a>
+                              </li>
+                              <li class="dropdown-menu-inner">
+                                  <a class="dropdown-item py-2" href="account.html">
+                                      <img src="assets/images/icon/account.png" class="me-2" alt="account" />Account
+                                      Details
+                                  </a>
+                              </li>
+                              <li class="dropdown-menu-inner">
+                                  <a class="dropdown-item py-2" href="coupon.html">
+                                      <img src="assets/images/icon/coupon.png" class="me-2" alt="coupon" />My Coupon
+                                  </a>
+                              </li>
+                              <li class="dropdown-menu-inner">
+                                  <a class="dropdown-item py-2" href="index.html">
+                                      <img src="assets/images/icon/logout.png" class="me-2" alt="logout" />Logout
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </header>
 
   <main>
     <!-- missionary image  -->
@@ -373,10 +514,752 @@
 
   </main>
 
-  <!-- use sepreate file to edit footer do not remove it -->
-  <footer id="footer"></footer>
+  <!-- footer -->
+
+  <footer id="footer">
+    <div class="container-fluid px-0 footer-wrap">
+        <div class="footer-top d-lg-flex align-items-center justify-content-center border-top py-3 text-center">
+            <div class="text-lg font-bold text-primary me-4 pe-2 my-1">Explore more</div>
+            <ul class="list-unstyled text-sm font-normal text-primary me-xxl-4 pe-2 d-lg-flex my-1">
+                <li>
+                    <a href="saree.html">Sarees</a>
+                </li>
+                <li>
+                    <a href="#">Men's wear</a>
+                </li>
+                <li>
+                    <a href="#">Lehengas</a>
+                </li>
+                <li>
+                    <a href="#">Let's twin</a>
+                </li>
+                <li>
+                    <a href="#">Suit sets</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bg-footer">
+            <div class="container-fluid px-lg-5 px-3">
+                <div class="d-lg-flex align-items-center gap-2">
+                    <div class="col px-md-0 text-center my-3 my-lg-0 footer-data1">
+                        <h3 class="font-normal text-xl font-rufina text-primary text-uppercase">FOLLOW US</h3>
+                        <div class="d-flex align-items-center justify-content-center gap-3 my-3">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="assets/images/icon/instagram.png" width="20" />
+                            </a>
+                            <hr class="dropdown-divider w-30">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="assets/images/icon/facebook.png" width="20" />
+                            </a>
+                        </div>
+                        <div class="font-normal text-lg text-primary">
+                            <p>Ground floor, 49, Meera nagar, Bhuvana, Udaipur, Rajasthan, India</p>
+                            <p>
+                                <a href="tel:+91 9826098260" class="text-primary text-decoration-none">
+                                    <img src="assets/images/icon/call.png" class="w-20 me-2" />
+                                    <span>+91 9826098260</span>
+                                </a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col text-center border-left-right my-3 my-lg-0 footer-data2">
+                        <div>
+                            <a href="index.html">
+                                <img src="assets/images/secondary-Logo.png" class="mb-2" alt="footer-logo" />
+                            </a>
+                        </div>
+                        <ul
+                            class="list-unstyled d-flex flex-wrap align-items-center justify-content-center gap-xxl-4 gap-2">
+                            <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Home</a></li>
+                            <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Women</a></li>
+                            <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Men</a></li>
+                            <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Edits</a></li>
+                            <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Kids</a></li>
+                            <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">About Us</a>
+                            </li>
+                        </ul>
+                        <hr class="separator text-center mx-auto my-3 w-290">
+                        <ul
+                            class="list-unstyled  d-flex flex-wrap align-items-center justify-content-center gap-xxl-3 gap-2 px-1">
+                            <li><a class="text-xs font-normal text-secondary text-decoration-none"
+                                    href="terms-and-conditions.html">Terms &
+                                    Conditions</a></li>
+                            <li><a class="text-xs font-normal text-secondary text-decoration-none"
+                                    href="privacy-policy.html">Privacy
+                                    policy</a></li>
+                            <li><a class="text-xs font-normal text-secondary text-decoration-none"
+                                    href="shipping.html">Shipping
+                                    policy</a></li>
+                            <li><a class="text-xs font-normal text-secondary text-decoration-none"
+                                    href="refunds.html">Refunds &
+                                    Cancellations</a></li>
+                        </ul>
+                    </div>
+                    <div class="col px-lg-3 text-center my-3 my-lg-0 footer-data3">
+                        <h3 class="font-normal text-lg px-3 font-rufina text-primary mb-3">Subscribe to our newsletter
+                            to be the first to know about offers.</h3>
+                        <div class="email-input position-relative mb-3 w-255 mx-auto">
+                            <input type="email"
+                                class="pb-2 border-bottom border-0 bg-transparent w-100 position-relative"
+                                placeholder="EMAIL" />
+                            <button class="btn position-absolute p-0">
+                                <img src="assets/images/icon/email.png" alt="email" /></button>
+
+                        </div>
+                        <div class="text-base text-normal text-primary">
+                            <p class="mb-1">Customer Service</p>
+                            <a href="mailto:customerservice.meghstudio@gmail.com"
+                                class="text-primary text-decoration-none mb-3 d-inline-block mail-link">customerservice.meghstudio@gmail.com</a>
+                            <p class="mb-1">Careers/Collaborations</p>
+                            <a href="mailto:meghstudio.business@gmail.com"
+                                class="text-primary text-decoration-none mail-link">meghstudio.business@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="navigationSection">
+    <div class="offcanvas offcanvas-start navigation-left" tabindex="-1" id="navigation"
+        aria-labelledby="navigationLabel">
+        <div class="offcanvas-header mb-4 p-0">
+            <h5 class="offcanvas-title text-base font-medium" id="navigationLabel">Menu</h5>
+            <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <div class="left-menu">
+                <ul class="list-unstyled menu-data">
+                    <li class="menu-item">
+                        <a class="menu-item text-decoration-none" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item-has-children cursor-pointer">
+                        Women <img src="assets/images/icon/arrow-top.png" class="img-fluid" alt="arrow-top"
+                            width="15" />
+                        <ul class="sub-menu list-unstyled" style="display: none;">
+                            <li class="menu-item">
+                                <a class="text-decoration-none" href="saree.html">
+                                    Saree
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="text-decoration-none" href="">
+                                    Lehenga
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="text-decoration-none" href="">
+                                    Dupattas
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="text-decoration-none" href="">
+                                    Suit set
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children cursor-pointer">
+                        Men's wear <img src="assets/images/icon/arrow-top.png" class="img-fluid rotate-180"
+                            alt="arrow-top" width="15" />
+                        <ul class="sub-menu list-unstyled" style="display: none;">
+                            <li class="menu-item">
+                                <a class="text-decoration-none" href="saree.html">
+                                    Saree
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="text-decoration-none" href="">
+                                    Lehenga
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="text-decoration-none" href="">
+                                    Dupattas
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a class="text-decoration-none" href="">
+                                    Suit set
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a class="menu-item text-decoration-none" href="ready-to-ship.html">Ready to
+                            ship</a></li>
+                    <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Let's twin</a></li>
+                    <li class="menu-item"><a class="menu-item text-decoration-none"
+                            href="bestsellers.html">Bestseller</a></li>
+                    <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Haldi edit</a></li>
+                    <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Mehendi edit</a></li>
+                    <li class="menu-item"><a class="menu-item text-decoration-none" href="#">Bridesmaid edit</a></li>
+                    <hr class="mt-0 mb-3  d-block d-lg-none">
+                    <li class="menu-item d-block d-lg-none">
+                        <a class="text-primary text-decoration-none" href="">Profile</a>
+                    </li>
+                    <li class="menu-item d-block d-lg-none">
+                        <a class="text-primary text-decoration-none" href="wishlist.html">Wishlist</a>
+                    </li>
+                    <li class="menu-item">
+                        <div type="button" class="login-wrapper d-block d-lg-none" data-bs-toggle="offcanvas"
+                            data-bs-target="#login" aria-controls="login">
+                            <button class="btn btn-primary btn-sm min-width-115">Login</button>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="loginSection">
+    <div class="offcanvas offcanvas-end navigation-left login-right" id="login" aria-labelledby="loginLabel">
+        <div class="offcanvas-header mb-4 p-0">
+            <h5 class="offcanvas-title text-2xl font-normal font-rufina" id="loginLabel">Login</h5>
+            <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body mb-40 p-0">
+            <div class="login-details">
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label text-sm font-medium text-secondary">
+                        Username Or Email Address<span class="ps-1">*</span>
+                    </label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="dev@gmail.com">
+                </div>
+                <div class="mb-4 position-relative">
+                    <label for="exampleFormControlInput1" class="form-label text-sm font-medium text-secondary">
+                        Password<span class="ps-1">*</span>
+                    </label>
+                    <input type="password" class="form-control pe-5" id="exampleFormControlInput1"
+                        placeholder="Password">
+                    <img src="assets/images/icon/visible.png" class="position-absolute eye-visible cursor-pointer" />
+                    <img src="assets/images/icon/not-visible.png" class="position-absolute eye-visible cursor-pointer"
+                        style="display:none;" />
+
+                </div>
+                <div class="remindme-lostpass d-flex align-items-center justify-content-between mb-4">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck1">
+                        <label class="form-check-label text-sm font-medium text-secondary" for="exampleCheck1">Remind
+                            me</label>
+                    </div>
+                    <div type="button" class="login-wrapper" data-bs-toggle="offcanvas" data-bs-target="#reset"
+                        aria-controls="reset">
+                        <a href="#" class="text-sm font-medium text-primary">Lost your password?</a>
+                    </div>
+                </div>
+                <div class="mb-4 btns d-lg-flex d-grid gap-4">
+                    <!-- <button class="btn btn-outline btn-6 btn-sm w-100">Cancel</button> -->
+                    <button
+                        class="btn btn-outline btn-animation btn-sm bg-white text-primary w-100 border"><span>Cancel</span></button>
+                    <button
+                        class="btn btn-primary btn-sm w-100 btn-animation btn-sm text-primary"><span>Login</span></button>
+                </div>
+                <div type="button" class="login-wrapper" data-bs-toggle="offcanvas" data-bs-target="#registration"
+                    aria-controls="login">
+                    <a href="#" class="text-sm font-medium text-primary">Don't have an account?</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="registrationSection">
+    <div class="offcanvas offcanvas-end navigation-left login-right" id="registration"
+        aria-labelledby="registrationLabel">
+        <div class="offcanvas-header mb-4 p-0">
+            <h5 class="offcanvas-title text-2xl font-normal font-rufina" id="registrationLabel">Register</h5>
+            <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body mb-40 p-0">
+            <div class="login-details">
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label text-sm font-medium text-secondary">
+                        Email Address<span class="ps-1">*</span>
+                    </label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="dev@gmail.com">
+                </div>
+                <div class="mb-4 position-relative">
+                    <label for="exampleFormControlInput1" class="form-label text-sm font-medium text-secondary">
+                        Password<span class="ps-1">*</span>
+                    </label>
+                    <input type="password" class="form-control pe-5" id="exampleFormControlInput1"
+                        placeholder="Password">
+                    <img src="assets/images/icon/visible.png" class="position-absolute eye-visible1 cursor-pointer" />
+                    <img src="assets/images/icon/not-visible.png" class="position-absolute eye-visible1 cursor-pointer"
+                        style="display:none;" />
+                </div>
+                <div class="mb-4 btns d-lg-flex d-grid gap-4">
+                    <button class="btn btn-outline btn-sm w-100">Cancel</button>
+                    <button class="btn btn-outline btn-sm w-100">Register</button>
+                </div>
+                <div type="button" class="login-wrapper d-none d-lg-block" data-bs-toggle="offcanvas"
+                    data-bs-target="#login" aria-controls="login">
+                    <a href="#" class="text-sm font-medium text-primary">Back to login</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="resetSection">
+    <div class="offcanvas offcanvas-end navigation-left login-right" id="reset" aria-labelledby="resetLabel">
+        <div class="offcanvas-header mb-4 p-0">
+            <h5 class="offcanvas-title text-2xl font-normal font-rufina" id="resetLabel">Reset password</h5>
+            <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body mb-40 p-0">
+            <div class="login-details mt-40">
+                <div class="mb-4">
+                    <p class="text-sm text-primary font-medium">
+                        Lost your password? Please enter your username or email address. You will receive a link to
+                        create a new password via email.
+                    </p>
+                </div>
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label text-sm font-medium text-secondary">
+                        User or Email Address<span class="ps-1">*</span>
+                    </label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="dev@gmail.com">
+                </div>
+                <div class="mb-4 btns d-lg-flex d-grid gap-4">
+                    <button class="btn btn-outline btn-sm w-100">Cancel</button>
+                    <button class="btn btn-outline btn-sm w-100">Reset password</button>
+                </div>
+                <div type="button" class="login-wrapper d-none d-lg-block" data-bs-toggle="offcanvas"
+                    data-bs-target="#login" aria-controls="login">
+                    <a href="#" class="text-sm font-medium text-primary">Back to login</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+</div>
+
+<div id="productdetailsSection">
+    <div class="offcanvas offcanvas-end navigation-left login-right" id="productdetails" aria-labelledby="productLabel">
+        <div class="offcanvas-header mb-4 p-0">
+            <h5 class="offcanvas-title text-2xl font-normal font-rufina" id="productLabel">Product details</h5>
+            <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body mb-40 p-0">
+            <div class="login-details">
+                <div class="mb-4">
+                    <p class="text-base text-primary font-medium">
+                        This casual dress is cut from comfortable cotton interlock jersey featuring a mini Damier motif
+                        on the front for a graphic signature look, while the color-blocked short sleeves and back strike
+                        a sporty contrast. The waistline is cinched with a contemporary leather drawstring, while the
+                        crew neckline is trimmed with a chic LV Chain detail.
+                    </p>
+                </div>
+                <div class="img-text-wrapper">
+                    <p class="text-sm text-primary font-normal mb-12">
+                        <img src="../assets/images/icon/check-circle.png" class="me-1" width="20" />
+                        <span class="ps-2">Main material : 100% Cotton</span>
+                    </p>
+                    <p class="text-sm text-primary font-normal mb-12">
+                        <img src="../assets/images/icon/check-circle.png" class="me-1" width="20" />
+                        <span class="ps-2">Made in India</span>
+                    </p>
+                    <p class="text-sm text-primary font-normal mb-12">
+                        <img src="../assets/images/icon/check-circle.png" class="me-1" width="20" />
+                        <span class="ps-2">Iconic</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="deliverySection">
+    <div class="offcanvas offcanvas-end navigation-left login-right" id="delivery" aria-labelledby="deliveryLabel">
+        <div class="offcanvas-header mb-4 p-0">
+            <h5 class="offcanvas-title text-2xl font-normal font-rufina" id="deliveryLabel">Delivery & returns</h5>
+            <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body mb-40 p-0">
+            <div class="login-details">
+                <div class="mb-4">
+                    <div class="accordion accordion-flush accordion1" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                    aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <div class="font-medium text-base text-primary">
+                                        <span>Payment information</span>
+                                        <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
+                                            alt="arrow-top" width="15" />
+                                    </div>
+                                    <div class="font-medium text-sm text-secondary d-block">Credit card, debit card or
+                                        bank transfer</div>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">
+                                    <p>
+                                        Payments can be made by credit or debit card, or bank transfer for purchases
+                                        made over the phone through client Services. Accepted credit / debit cards are
+                                        Visa and Mastercard.
+                                    </p>
+                                    <p>
+                                        All transactions are secured. The Megh Studio website is provided with an
+                                        encryption system to protect personal and payment data.
+                                    </p>
+                                    <p class="mb-0">
+                                        If you require further information or assistance, please contact client Services
+                                        at 1800 123 4567.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                    aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    <div class="font-medium text-base text-primary">
+                                        <span>Delivery details</span>
+                                        <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
+                                            alt="arrow-top" width="15" />
+                                    </div>
+                                    <div class="font-medium text-sm text-secondary d-block">Complimentary delivery or
+                                        collect-in-store</div>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">
+                                    <p>
+                                        Payments can be made by credit or debit card, or bank transfer for purchases
+                                        made over the phone through client Services. Accepted credit / debit cards are
+                                        Visa and Mastercard.
+                                    </p>
+                                    <p>
+                                        All transactions are secured. The Megh Studio website is provided with an
+                                        encryption system to protect personal and payment data.
+                                    </p>
+                                    <p class="mb-0">
+                                        If you require further information or assistance, please contact client Services
+                                        at 1800 123 4567.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <div class="font-medium text-base text-primary">
+                                        <span>Exchange & return</span>
+                                        <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
+                                            alt="arrow-top" width="15" />
+                                    </div>
+                                    <div class="font-medium text-sm text-secondary d-block">Complimentary, in store and
+                                        through client services</div>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">Placeholder
+                                    content for this accordion, which is intended to demonstrate the
+                                    <code>.accordion-flush</code> class. This is the third item's accordion body.
+                                    Nothing more exciting happening here in terms of content, but just filling up the
+                                    space to make it look, at least at first glance, a bit more representative of how
+                                    this would look in a real-world application.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                    aria-expanded="false" aria-controls="flush-collapseFour">
+                                    <div class="font-medium text-base text-primary">
+                                        <span>Packaging</span>
+                                        <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
+                                            alt="arrow-top" width="15" />
+                                    </div>
+                                    <div class="font-medium text-sm text-secondary d-block">Contemporary and
+                                        eco-friendly wrapping inspired by our Heritage.</div>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">
+                                    <div class="mb-12">
+                                        <img src="../assets/images/icon/package.png" class="w-100" />
+                                    </div>
+                                    All Megh Studio orders are presented in an iconic gift box in the distinctive shade
+                                    "pale yellow-green". Playing with contrast, the boxes are accented by touches of
+                                    brown, reminiscent of the Maison's ribbons and the historic color used for
+                                    personalization from 2022. The chromatic harmony creates a timeless allure with a
+                                    contemporary flair, in an ode to the golden age of travel.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="filterSection">
+    <div class="offcanvas offcanvas-start navigation-left login-right filter p-0" id="filter"
+        aria-labelledby="filterLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-2xl font-normal font-rufina" id="filterLabel">Show filters</h5>
+            <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body position-relative p-0">
+            <div class="login-details h-100 d-flex justify-content-between flex-column">
+                <div class="accordion accordion-flush accordion1 pt-0" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div class="font-medium text-base text-primary">
+                                    <span>Category</span>
+                                    <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
+                                        alt="arrow-top" width="15" />
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck104">
+                                        <label class="form-check-label text-sm font-medium text-secondary"
+                                            for="exampleCheck104">Saree</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck103"
+                                            checked>
+                                        <label class="form-check-label text-sm font-medium text-secondary"
+                                            for="exampleCheck103">Lehengas</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck102">
+                                        <label class="form-check-label text-sm font-medium text-secondary"
+                                            for="exampleCheck102">Suits</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck101">
+                                        <label class="form-check-label text-sm font-medium text-secondary"
+                                            for="exampleCheck101">Gown</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck100">
+                                        <label class="form-check-label text-sm font-medium text-secondary"
+                                            for="exampleCheck100">Kids wear</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <div class="font-medium text-base text-primary">
+                                    <span>Material</span>
+                                    <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
+                                        alt="arrow-top" width="15" />
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">
+                                <p>
+                                    Payments can be made by credit or debit card, or bank transfer for purchases made
+                                    over the phone through client Services. Accepted credit / debit cards are Visa and
+                                    Mastercard.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                <div class="font-medium text-base text-primary">
+                                    <span>Color</span>
+                                    <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
+                                        alt="arrow-top" width="15" />
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">Placeholder content
+                                for this accordion, which is intended to demonstrate the class. This is the third item's
+                                accordion body. Nothing more exciting happening here in terms of content, but just
+                                filling up the space to make it look, at least at first glance, a bit more
+                                representative of how this would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns d-lg-flex d-grid gap-4 bg-white text-center w-100 bottom-0 position-sticky">
+                    <button class="btn btn-outline btn-sm w-100">Reset</button>
+                    <button class="btn btn-primary btn-sm w-100">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sizeSection">
+    <div class="offcanvas offcanvas-end navigation-left login-right filter p-0" id="size" aria-labelledby="sizeLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-2xl font-normal font-rufina" id="sizeLabel">Size guide</h5>
+            <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body position-relative p-0">
+            <div class="login-details h-100 d-flex justify-content-between flex-column">
+                <div class="accordion accordion-flush accordion1 pt-0" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div class="font-medium text-base text-primary">
+                                    <span>Category</span>
+                                    <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
+                                        alt="arrow-top" width="15" />
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck104">
+                                        <label class="form-check-label text-sm font-medium text-secondary"
+                                            for="exampleCheck104">Saree</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck103"
+                                            checked>
+                                        <label class="form-check-label text-sm font-medium text-secondary"
+                                            for="exampleCheck103">Lehengas</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck102">
+                                        <label class="form-check-label text-sm font-medium text-secondary"
+                                            for="exampleCheck102">Suits</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck101">
+                                        <label class="form-check-label text-sm font-medium text-secondary"
+                                            for="exampleCheck101">Gown</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck100">
+                                        <label class="form-check-label text-sm font-medium text-secondary"
+                                            for="exampleCheck100">Kids wear</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <div class="font-medium text-base text-primary">
+                                    <span>Material</span>
+                                    <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
+                                        alt="arrow-top" width="15" />
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">
+                                <p>
+                                    Payments can be made by credit or debit card, or bank transfer for purchases made
+                                    over the phone through client Services. Accepted credit / debit cards are Visa and
+                                    Mastercard.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                <div class="font-medium text-base text-primary">
+                                    <span>Color</span>
+                                    <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
+                                        alt="arrow-top" width="15" />
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">Placeholder content
+                                for this accordion, which is intended to demonstrate the class. This is the third item's
+                                accordion body. Nothing more exciting happening here in terms of content, but just
+                                filling up the space to make it look, at least at first glance, a bit more
+                                representative of how this would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
