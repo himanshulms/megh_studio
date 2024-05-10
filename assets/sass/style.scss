@@ -780,14 +780,17 @@ section {
     }
 
     .owl-nav {
-        opacity: 0;
-        position: absolute;
-        height: calc(100% - 170px);
-        width: 100%;
-        top: 0;
-        transition: opacity .33s;
+        // opacity: 0;
+        // position: absolute;
+        // height: calc(100% - 170px);
+        // width: 100%;
+        // top: 0;
+        // transition: opacity .33s;
 
         .owl-prev {
+            position: absolute;
+            left: 0;
+            top: 37%;
             span {
                 display: none;
             }
@@ -803,11 +806,13 @@ section {
         }
 
         .owl-next {
+            position: absolute;
+            left: auto;
+            right: 0;
+            top: 37%;
             span {
                 display: none;
             }
-
-            height: 100%;
 
             &::before {
                 content: '';
