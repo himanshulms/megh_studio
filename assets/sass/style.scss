@@ -862,7 +862,7 @@ section {
 
 // filter design start
 
-.filter {
+.filters {
     .count {
         position: relative;
 
@@ -1580,7 +1580,7 @@ section {
     color: $secondary-color;
 }
 .bottom-0 {
-    bottom: 0;
+    bottom: 0 !important;
 }
 /********Accordion starts here***********/
 .accordion {

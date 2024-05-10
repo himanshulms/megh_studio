@@ -732,10 +732,10 @@ section .main-heading {
   margin-left: 0;
 }
 
-.filter .count {
+.filters .count {
   position: relative;
 }
-.filter .count::before {
+.filters .count::before {
   content: "";
   position: absolute;
   width: 9px;
@@ -1331,7 +1331,7 @@ section .main-heading {
 }
 
 .bottom-0 {
-  bottom: 0;
+  bottom: 0 !important;
 }
 
 /********Accordion starts here***********/
