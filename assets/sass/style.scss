@@ -1314,7 +1314,7 @@ section {
 
             ul.dropdown-menu {
                 width: 244px;
-                padding: 0;
+                padding: 0;    margin-top: 10px !important;
 
                 li {
                     padding: 12px;
@@ -1625,8 +1625,6 @@ section {
   transition-duration: 0.4s;
         }
     }
-<<<<<<< Updated upstream
-=======
 
     // &.btn-outline {
     //     background-color: $white !important;
@@ -1662,7 +1660,6 @@ section {
     //   transition-duration: 0.4s;
     //         }
     //     }
->>>>>>> Stashed changes
 
     &.btn-sm {
         padding: 7px;
@@ -1802,7 +1799,6 @@ button:focus:not(:focus-visible),
 
 /*******************hover on the button*******************/
 
-<<<<<<< Updated upstream
 // .btn{
 //     display: inline-block;
 //     position: relative;
@@ -1905,130 +1901,6 @@ button:focus:not(:focus-visible),
 // 		}
 // 	}
 // }
-=======
-.btn {
-    display: inline-block;
-    position: relative;
-    background: none;
-    border: none;
-    cursor: pointer;
-    // margin: 20px 30px;
-    background: rgba(0, 0, 0, 0.09);
-
-    &.btn-animation {
-        span {
-            display: block;
-            padding: 7px 10px;
-
-            &::before,
-            &::after {
-                content: "";
-                width: 2px;
-                height: 0;
-                position: absolute;
-                transition: all 0.2s linear;
-
-            }
-        }
-
-        &:hover {
-            span {
-
-                &::before,
-                &::after {
-                    background: $primary-color;
-                    height: 100%;
-                }
-            }
-        }
-
-        &::before {
-            left: 50%;
-            top: 0;
-            transition-duration: 0.4s;
-        }
-
-        &::after {
-            left: 50%;
-            bottom: 0;
-            transition-duration: 0.4s;
-        }
-
-        span {
-            &::before {
-                left: 0;
-                top: 50%;
-                transition-duration: 0.4s;
-            }
-
-            &::after {
-                right: 0;
-                top: 50%;
-                transition-duration: 0.4s;
-            }
-        }
-
-        &:hover {
-            &::before {
-                left: 0;
-            }
-
-            &::after {
-                left: 0;
-            }
-
-            span {
-                &::before {
-                    top: 0;
-                }
-
-                &::after {
-                    top: 0;
-                }
-            }
-        }
-
-    }
-
-    &::before {
-        content: "";
-        width: 0;
-        height: 2px;
-        position: absolute;
-        transition: all 0.2s linear;
-        background: $primary-color;
-    }
-
-    &::after {
-        content: "";
-        width: 0;
-        height: 2px;
-        position: absolute;
-        transition: all 0.2s linear;
-        background: $primary-color;
-    }
-
-    &:hover {
-        &::before {
-            width: 100%;
-        }
-
-        &::after {
-            width: 100%;
-        }
-
-        span {
-            &::before {
-                height: 100%;
-            }
-
-            &::after {
-                height: 100%;
-            }
-        }
-    }
-}
->>>>>>> Stashed changes
 
 
 /*******************button hover *****************/

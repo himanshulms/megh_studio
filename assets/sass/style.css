@@ -1038,6 +1038,7 @@ section .main-heading {
 .custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu {
   width: 244px;
   padding: 0;
+  margin-top: 10px !important;
 }
 .sortby-dropdown ul.nav-dropdown li.dropdown ul.dropdown-menu li,
 .custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu li {
