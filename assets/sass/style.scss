@@ -1491,19 +1491,43 @@ section {
         border: 1px solid $button-color !important;
         &:hover {
             color: $primary-color !important;
-            background-color: $stroke-color !important;
+            // background-color: $stroke-color !important;
         }
     }
-    &.btn-outline {
-        background-color: $white !important;
-        border: 1px solid  $stroke-color !important;
-        color: $primary-color !important;
-        &:hover {
-            background-color: $primary-color !important;
-            color: $stroke-color !important;
-        } 
-    }
-
+    // &.btn-outline {
+    //     background-color: $white !important;
+    //     border: 1px solid  $stroke-color !important;
+    //     color: $primary-color !important;
+    //     &:hover {
+    //         background-color: $primary-color !important;
+    //         color: $stroke-color !important;
+    //     } 
+    // }
+//     &.btn-outline {
+//         width: 180px;
+//         height: 45px;
+//         cursor: pointer;
+//         background: transparent;
+//         border: 3px solid #FC0041;
+//         outline: none;
+//         transition: 1s ease-in-out;
+//         font-weight: 700;
+//         font-size: 16px;
+//         line-height: 16.9px;
+//         color: $primary-color;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         &:hover {
+//             transition: 1s ease-in-out;
+//             background: transparent;
+//         }
+//         &:before {
+//             left: 50%;
+//   top: 0;
+//   transition-duration: 0.4s;
+//         }
+//     }
 
     &.btn-sm {
         padding: 7px;
@@ -1608,3 +1632,111 @@ section {
 
     }
 }
+
+/*******************hover on the button*******************/
+
+.btn{
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    // margin: 20px 30px;
+    background: rgba(0,0,0,0.09);
+    &.btn-animation {
+        span {
+            display: block;
+            padding: 7px 10px;
+            &::before, &::after{
+                content:"";
+                width:2px;
+                height:0;
+                position: absolute;
+                transition: all 0.2s linear;
+                
+            } 
+        }
+        &:hover {
+            span {
+            &::before, &::after{
+                background: $primary-color;
+                height:100%;                   
+            }
+        }
+        }
+        &::before {
+            left: 50%;
+            top: 0;
+            transition-duration: 0.4s;
+        }
+        &::after {
+            left: 50%;
+            bottom: 0;
+            transition-duration: 0.4s;
+        }
+        span {
+            &::before {
+                left: 0;
+                top: 50%;
+                transition-duration: 0.4s;
+            }
+            &::after {
+                right: 0;
+                top: 50%;
+                transition-duration: 0.4s;
+            }
+        }
+        &:hover {
+            &::before {
+                left: 0;
+            }
+            &::after {
+                left: 0;
+            }
+            span {
+                &::before {
+                    top: 0;
+                }
+                &::after {
+                    top: 0;
+                }
+            }
+        }
+        
+    }
+    &::before {
+		content: "";
+		width: 0;
+		height: 2px;
+		position: absolute;
+		transition: all 0.2s linear;
+		background: $primary-color;
+	}
+	&::after {
+		content: "";
+		width: 0;
+		height: 2px;
+		position: absolute;
+		transition: all 0.2s linear;
+		background: $primary-color;
+	}
+	&:hover {
+		&::before {
+			width: 100%;
+		}
+		&::after {
+			width: 100%;
+		}
+		span {
+			&::before {
+				height: 100%;
+			}
+			&::after {
+				height: 100%;
+			}
+		}
+	}
+}
+
+
+/*******************button hover *****************/

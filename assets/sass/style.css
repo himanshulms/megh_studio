@@ -1228,16 +1228,6 @@ section .main-heading {
 }
 .btn.btn-primary:hover {
   color: #3A332B !important;
-  background-color: #CDCDCD !important;
-}
-.btn.btn-outline {
-  background-color: #ffffff !important;
-  border: 1px solid #CDCDCD !important;
-  color: #3A332B !important;
-}
-.btn.btn-outline:hover {
-  background-color: #3A332B !important;
-  color: #CDCDCD !important;
 }
 .btn.btn-sm {
   padding: 7px;
@@ -1355,4 +1345,91 @@ section .main-heading {
   transform: rotate(180deg);
   margin-top: 0;
   transition: 0.3s all;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*******************hover on the button*******************/
+.btn {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.09);
+}
+.btn.btn-animation span {
+  display: block;
+  padding: 7px 10px;
+}
+.btn.btn-animation span::before, .btn.btn-animation span::after {
+  content: "";
+  width: 2px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+}
+.btn.btn-animation:hover span::before, .btn.btn-animation:hover span::after {
+  background: #3A332B;
+  height: 100%;
+}
+.btn.btn-animation::before {
+  left: 50%;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn.btn-animation::after {
+  left: 50%;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn.btn-animation span::before {
+  left: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn.btn-animation span::after {
+  right: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn.btn-animation:hover::before {
+  left: 0;
+}
+.btn.btn-animation:hover::after {
+  left: 0;
+}
+.btn.btn-animation:hover span::before {
+  top: 0;
+}
+.btn.btn-animation:hover span::after {
+  top: 0;
+}
+.btn::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #3A332B;
+}
+.btn::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #3A332B;
+}
+.btn:hover::before {
+  width: 100%;
+}
+.btn:hover::after {
+  width: 100%;
+}
+.btn:hover span::before {
+  height: 100%;
+}
+.btn:hover span::after {
+  height: 100%;
+}
+
+/*******************button hover *****************//*# sourceMappingURL=style.css.map */
