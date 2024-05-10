@@ -1,10 +1,52 @@
-<div class="offcanvas offcanvas-end navigation-left login-right filter p-0" id="size" aria-labelledby="sizeLabel">
-    <div class="offcanvas-header">
+<div class="offcanvas offcanvas-end navigation-left login-right p-36" id="size" aria-labelledby="sizeLabel">
+    <div class="offcanvas-header p-0 mb-4">
         <h5 class="offcanvas-title text-2xl font-normal font-rufina" id="sizeLabel">Size guide</h5>
         <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body position-relative p-0">
-        <div class="login-details h-100 d-flex justify-content-between flex-column">
+        <div class="d-flex justify-content-between">
+            <div class="dropdown-data custom-dropdown-data">
+                <label class="text-sm font-medium text-secondary">Line</label>
+                <ul class="nav nav-dropdown border-0">          
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle border-0 text-base text-primary font-medium  text-decoration-none" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">New arrival</a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-menu-li">
+                            <span class="text-base text-primary font-medium">New arrival</span>
+                        </li><hr class="dropdown-divider m-0">
+                        <li class="dropdown-menu-li">
+                            <span class="text-base text-primary font-medium">Price - high to low</span>
+                        </li><hr class="dropdown-divider m-0">
+                        <li class="dropdown-menu-li">
+                            <span class="text-base text-primary font-medium">Price - low to high</span>
+                        </li>
+                      
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown-data custom-dropdown-data">
+                <label class="text-sm font-medium text-secondary">Size in</label>
+                <ul class="nav nav-dropdown border-0">          
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle border-0 text-base text-primary font-medium  text-decoration-none" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">New arrival</a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-menu-li">
+                            <span class="text-base text-primary font-medium">New arrival</span>
+                        </li><hr class="dropdown-divider m-0">
+                        <li class="dropdown-menu-li">
+                            <span class="text-base text-primary font-medium">Price - high to low</span>
+                        </li><hr class="dropdown-divider m-0">
+                        <li class="dropdown-menu-li">
+                            <span class="text-base text-primary font-medium">Price - low to high</span>
+                        </li>
+                      
+                      </ul>
+                    </li>
+                </ul>
+            </div>      
+        </div>
+        <div class="sizeguide-accordion">
             <div class="accordion accordion-flush accordion1 pt-0" id="accordionFlushExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
@@ -81,7 +123,6 @@
                   </div>
                 </div>
             </div>
-      
         </div>
     </div>
 </div>
