@@ -10,6 +10,9 @@ body {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
+    // main{
+    //     height: 100%;
+    // }
 }
 
 /*****Font family********/
@@ -348,7 +351,17 @@ $font-black: 900;
     }
 }
 
+.pt-40{
+    padding-top:40px;
+}
+
 // min width
+.w-lg-75{
+    @media (min-width:991px) {
+        width: 75%;
+    }
+    width: 100%;
+}
 .min-width-246 {
     min-width: 246px;
 
@@ -1012,6 +1025,56 @@ section {
 }
 
 // product details end
+
+// apply coupon
+.coupon-code{
+    .apply-coupon{
+        
+        input{
+            min-height: 48px;
+        }
+    }
+}
+
+// page-accordion start
+
+.page-accordion{
+    .accordion-item{
+        border: none;
+        padding-top: 16px;
+        .accordion-header{
+            .accordion-button{
+                background: transparent;
+                border-bottom: 1px solid $stroke-color;
+                margin-bottom: 0 !important;
+                padding: 16px 0;
+                &:after{
+                    background-image: url('../images/minusCircle.png');
+                }
+                &.collapsed{
+                    &:after{
+                        background-image: url('../images/plusCircle.png');
+                    }
+                }
+            }
+        }
+        .accordion-body{
+            padding: 16px 0;
+        }
+        &:first-child{
+            padding-top: 0;
+        }
+        &:last-child{
+            .accordion-header{
+                .accordion-button{
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+// page-accordion end
 
 /********Header Css starts here*******/
 

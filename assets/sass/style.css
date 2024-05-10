@@ -286,6 +286,19 @@ body {
   }
 }
 
+.pt-40 {
+  padding-top: 40px;
+}
+
+.w-lg-75 {
+  width: 100%;
+}
+@media (min-width: 991px) {
+  .w-lg-75 {
+    width: 75%;
+  }
+}
+
 .min-width-246 {
   min-width: 246px;
 }
@@ -841,6 +854,36 @@ section .main-heading {
 }
 .product-details .product-description .wishlist-btn img {
   width: 24px;
+}
+
+.coupon-code .apply-coupon input {
+  min-height: 48px;
+}
+
+.page-accordion .accordion-item {
+  border: none;
+  padding-top: 16px;
+}
+.page-accordion .accordion-item .accordion-header .accordion-button {
+  background: transparent;
+  border-bottom: 1px solid #CDCDCD;
+  margin-bottom: 0 !important;
+  padding: 16px 0;
+}
+.page-accordion .accordion-item .accordion-header .accordion-button:after {
+  background-image: url("../images/minusCircle.png");
+}
+.page-accordion .accordion-item .accordion-header .accordion-button.collapsed:after {
+  background-image: url("../images/plusCircle.png");
+}
+.page-accordion .accordion-item .accordion-body {
+  padding: 16px 0;
+}
+.page-accordion .accordion-item:first-child {
+  padding-top: 0;
+}
+.page-accordion .accordion-item:last-child .accordion-header .accordion-button {
+  border: none;
 }
 
 /********Header Css starts here*******/
