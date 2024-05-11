@@ -6,15 +6,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    scroll-behavior: smooth;
-    // main{
-    //     height: 100%;
-    // }
-}
-
 /*****Font family********/
 .font-rufina {
     font-family: "Rufina", serif !important;
@@ -31,6 +22,31 @@ $babypink-color: #EACAC2;
 $ghost-white: #F8F6F4;
 $danger: #E03737;
 $white: #ffffff;
+
+
+body {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+    height: 100vh;
+    /********Header Footer fixed********/
+    .wrapper {
+        display  : flex;
+        flex-flow: column;
+        height   : 100%;
+        .header-wrapper {
+            flex       : 0 1 auto;
+            background-color: $white;
+        }
+        .main-wrapper {
+            padding-top:100px;
+            flex: 1 1 auto;
+        }
+        .footer-wrapper {
+            flex: 0 1 40px;
+        }
+    }
+}
 
 // global color classes
 .text-primary {
@@ -1199,8 +1215,8 @@ section {
 
 // custom drop down scss start
 .main-logo {
-    @media (max-width: 992px) {
-        width: 100px;
+    @media (max-width: 575px) {
+        width: 130px;
     }
 }
 
@@ -1427,7 +1443,7 @@ section {
 
     .eye-visible,
     .eye-visible1{
-        bottom: 8px;
+        bottom: 12px;
         right: 10px;
     }
 }
@@ -1634,7 +1650,7 @@ section {
 
 // btn css
 .btn {
-    font-size: $text-base;
+    font-size: $text-sm;
     font-weight: $font-medium;
     line-height: $lheight-sm;
     text-align: center;
@@ -1653,45 +1669,41 @@ section {
         background-color: $button-color !important;
         border: 1px solid $button-color !important;
 
-        &:hover {
-            color: $primary-color !important;
-            background-color: $stroke-color !important;
-        }
+        // &:hover {
+        //     color: $primary-color !important;
+        //     background-color: $stroke-color !important;
+        // }
     }
     &.btn-outline {
         background-color: $white !important;
         border: 1px solid  $stroke-color !important;
-        color: $primary-color !important;
-        &:hover {
-            background-color: $primary-color !important;
-            color: $stroke-color !important;
-        } 
-    }
-    &.btn-outline {
-        width: 180px;
-        height: 45px;
-        cursor: pointer;
-        background: transparent;
-        border: 3px solid #FC0041;
-        outline: none;
-        transition: 1s ease-in-out;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 16.9px;
         color: $primary-color;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        &:hover {
-            transition: 1s ease-in-out;
-            background: transparent;
-        }
-        &:before {
-            left: 50%;
-  top: 0;
-  transition-duration: 0.4s;
-        }
+        // &:hover {
+        //     background-color: $primary-color !important;
+        //     color: $stroke-color !important;
+        // } 
     }
+//     &.btn-outline {
+//         width: 180px;
+//         cursor: pointer;
+//         background: transparent;
+//         border: 3px solid #FC0041;
+//         outline: none;
+//         transition: 1s ease-in-out;
+//         color: $primary-color;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         &:hover {
+//             transition: 1s ease-in-out;
+//             background: transparent;
+//         }
+//         &:before {
+//             left: 50%;
+//   top: 0;
+//   transition-duration: 0.4s;
+//         }
+//     }
 
     // &.btn-outline {
     //     background-color: $white !important;
@@ -1787,7 +1799,11 @@ section {
 .p-36 {
     padding: 36px !important;
 }
-
+.navigation-left  {
+    .form-control {
+    border-radius: 0;    min-height: 48px !important;
+} 
+}
 .form-control:focus,
 button:focus:not(:focus-visible),
 .btn:focus,
@@ -1991,3 +2007,35 @@ button:focus:not(:focus-visible),
 
 
 /*******************button hover *****************/
+.btn {
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: .2s transform ease-in-out;
+    z-index: 0;
+    
+    &::after {
+      background-color: $primary-color !important;
+      color: $white !important;
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(-100%, 0) rotate(10deg);
+      transform-origin: top left;
+      transition: .2s transform ease-out;
+      will-change: transform;
+      z-index: -1;
+    } 
+    &:hover::after {
+      transform: translate(0, 0);
+    }
+    &:hover {
+      border: 2px solid transparent;
+      transform: scale(1.05);color: $white !important;
+      }
+    }
