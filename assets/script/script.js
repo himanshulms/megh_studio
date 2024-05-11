@@ -62,10 +62,32 @@ $(function () {
 
     $('.eye-visible').click(function(){
         $('.eye-visible').toggle();
+        var $input = $(this).siblings('input'); // Get the sibling input element
+        if ($input.attr('type') === 'password') {
+            $input.attr('type', 'text'); // Change type to 'text' if it's 'password'
+        } else {
+            $input.attr('type', 'password'); // Change type to 'password' if it's 'text' or other
+        }
     });
 
     $('.eye-visible1').click(function(){
         $('.eye-visible1').toggle();
+        var $input = $(this).siblings('input'); // Get the sibling input element
+        if ($input.attr('type') === 'password') {
+            $input.attr('type', 'text'); // Change type to 'text' if it's 'password'
+        } else {
+            $input.attr('type', 'password'); // Change type to 'password' if it's 'text' or other
+        }
+    });
+
+    $('.eye-visible2').click(function(){
+        $('.eye-visible2').toggle();
+        var $input = $(this).siblings('input'); // Get the sibling input element
+        if ($input.attr('type') === 'password') {
+            $input.attr('type', 'text'); // Change type to 'text' if it's 'password'
+        } else {
+            $input.attr('type', 'password'); // Change type to 'password' if it's 'text' or other
+        }
     });
 
 });

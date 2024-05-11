@@ -325,6 +325,11 @@ $font-black: 900;
     }
 }
 
+.px-12{
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
 .pb-96 {
     padding-bottom: 96px;
 
@@ -1111,6 +1116,10 @@ section {
     .checkout-form {
         display: flex;
         gap: 24px;
+        @media (max-width:991px) {
+            flex-wrap: wrap;
+            gap: 0px;
+        }
         .form-field{
             width: 50%;
             @media (max-width:991px) {
@@ -1126,15 +1135,65 @@ section {
         }
     }
 
+    .your-order{
+        padding-bottom: 31px;
+        @media (max-width:991px) {
+            padding-bottom: 0px;
+        }
+    }
+
     .checkout-page-details {
         border: 1px solid $stroke-color;
         padding: 16px;
 
+        .product-mini-cart-wrapper{
+            .product-mini-cart-img{
+                min-width: 104;
+                min-height: 139px;
+                max-width: 104px;
+                max-height: 139px;
+            }
+        } 
         .checout-details {
             border-top: 1px solid $stroke-color;
         }
     }
 }
+
+// user profile page
+
+.profile-section{
+    .profile{
+        border-right: 1px solid $stroke-color;
+        @media (max-width:991px) {
+            border: 0;
+        }
+        .profile-menu{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                padding-bottom: 24px;
+                a{
+                    font-size: $text-base;
+                    font-weight: $font-medium;
+                    color: $secondary-color;
+                    text-decoration: none;
+                }
+                &.active{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .profile-order{
+        padding-left: 80px;
+        @media (max-width:991px) {
+            padding-left: 12px;
+        }
+    }
+}
+
 
 /********Header Css starts here*******/
 
@@ -1367,12 +1426,18 @@ section {
 .login-details {
 
     .eye-visible,
-    .eye-visible1 {
+    .eye-visible1{
         bottom: 8px;
         right: 10px;
     }
 }
-
+.crtpass{
+    .eye-visible2 {
+        position: absolute;
+        bottom: 12px;
+        right: 10px;
+    }
+}
 /*********Footer starts here********/
 .footer-wrap {
     .footer-top {
@@ -1472,6 +1537,7 @@ section {
     }
 }
 
+<<<<<<< Updated upstream
 // common scss
 // gap classes
 .gap-12 {
@@ -1685,6 +1751,8 @@ section {
     }
 }
 
+=======
+>>>>>>> Stashed changes
 .w-290 {
     width: 290px;
     min-width: 290px;
@@ -1801,107 +1869,131 @@ button:focus:not(:focus-visible),
 
 /*******************hover on the button*******************/
 
+<<<<<<< Updated upstream
 // .btn{
+=======
+// .btn {
+>>>>>>> Stashed changes
 //     display: inline-block;
 //     position: relative;
 //     background: none;
 //     border: none;
 //     cursor: pointer;
 //     // margin: 20px 30px;
-//     background: rgba(0,0,0,0.09);
+//     background: rgba(0, 0, 0, 0.09);
+
 //     &.btn-animation {
 //         span {
 //             display: block;
 //             padding: 7px 10px;
-//             &::before, &::after{
-//                 content:"";
-//                 width:2px;
-//                 height:0;
+
+//             &::before,
+//             &::after {
+//                 content: "";
+//                 width: 2px;
+//                 height: 0;
 //                 position: absolute;
 //                 transition: all 0.2s linear;
-                
-//             } 
-//         }
-//         &:hover {
-//             span {
-//             &::before, &::after{
-//                 background: $primary-color;
-//                 height:100%;                   
+
 //             }
 //         }
+
+//         &:hover {
+//             span {
+
+//                 &::before,
+//                 &::after {
+//                     background: $primary-color;
+//                     height: 100%;
+//                 }
+//             }
 //         }
+
 //         &::before {
 //             left: 50%;
 //             top: 0;
 //             transition-duration: 0.4s;
 //         }
+
 //         &::after {
 //             left: 50%;
 //             bottom: 0;
 //             transition-duration: 0.4s;
 //         }
+
 //         span {
 //             &::before {
 //                 left: 0;
 //                 top: 50%;
 //                 transition-duration: 0.4s;
 //             }
+
 //             &::after {
 //                 right: 0;
 //                 top: 50%;
 //                 transition-duration: 0.4s;
 //             }
 //         }
+
 //         &:hover {
 //             &::before {
 //                 left: 0;
 //             }
+
 //             &::after {
 //                 left: 0;
 //             }
+
 //             span {
 //                 &::before {
 //                     top: 0;
 //                 }
+
 //                 &::after {
 //                     top: 0;
 //                 }
 //             }
 //         }
-        
+
 //     }
+
 //     &::before {
-// 		content: "";
-// 		width: 0;
-// 		height: 2px;
-// 		position: absolute;
-// 		transition: all 0.2s linear;
-// 		background: $primary-color;
-// 	}
-// 	&::after {
-// 		content: "";
-// 		width: 0;
-// 		height: 2px;
-// 		position: absolute;
-// 		transition: all 0.2s linear;
-// 		background: $primary-color;
-// 	}
-// 	&:hover {
-// 		&::before {
-// 			width: 100%;
-// 		}
-// 		&::after {
-// 			width: 100%;
-// 		}
-// 		span {
-// 			&::before {
-// 				height: 100%;
-// 			}
-// 			&::after {
-// 				height: 100%;
-// 			}
-// 		}
-// 	}
+//         content: "";
+//         width: 0;
+//         height: 2px;
+//         position: absolute;
+//         transition: all 0.2s linear;
+//         background: $primary-color;
+//     }
+
+//     &::after {
+//         content: "";
+//         width: 0;
+//         height: 2px;
+//         position: absolute;
+//         transition: all 0.2s linear;
+//         background: $primary-color;
+//     }
+
+//     &:hover {
+//         &::before {
+//             width: 100%;
+//         }
+
+//         &::after {
+//             width: 100%;
+//         }
+
+//         span {
+//             &::before {
+//                 height: 100%;
+//             }
+
+//             &::after {
+//                 height: 100%;
+//             }
+//         }
+//     }
 // }
 
 

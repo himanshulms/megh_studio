@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Megh Studio | Checkout</title>
+    <title>Megh Studio | Order</title>
     <!-- google font link -->
     <link href="./assets/font/font.css" rel="stylesheet">
     <!-- bootstrap links -->
@@ -185,124 +185,49 @@
     <main>
         <!-- detail section start -->
 
-        <section class="checkout-section ">
+        <section class="profile-section ">
             <div class="container-fluid px-lg-5 px-3 py-lg-5 py-4">
 
                 <div class="row ">
-                    <div class="col-lg-7 pb-lg-0 pb-4">
-                        <p class="text-base font-medium text-primary mb-4">Billing Details</p>
-                        <div class="checkout-form-wrapper">
-                            <div class="checkout-form">
-                                <div class="mb-4 form-field">
-                                    <label for="fname" class="form-label text-sm font-medium text-secondary">
-                                        First Name<span class="ps-1">*</span>
-                                    </label>
-                                    <input type="text" class="form-control rounded-0 input-lg" id="fname"
-                                        placeholder="Dev">
-                                </div>
+                    <div class="col-lg-3 pb-lg-0 pb-4 profile">
+                        <p class="text-2xl font-normal text-primary mb-4 font-rufina mb-3">Hi Dev</p>
+                        <ul class="mb-3 profile-menu">
+                            <li class="active">
+                                <a href="order.html">
+                                    Order
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Shipping & Billing Address
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Download
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Account Details
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    My coupon
+                                </a>
+                            </li>
+                            <li>
+                                <a href="order.html">
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
 
-                                <div class="mb-4 form-field">
-                                    <label for="lname" class="form-label text-sm font-medium text-secondary">
-                                        Last Name<span class="ps-1">*</span>
-                                    </label>
-                                    <input type="text" class="form-control rounded-0 input-lg" id="lname"
-                                        placeholder="Pancholi">
-                                </div>
-                            </div>
-                            <div class="checkout-form">
-                                <div class="mb-4 form-field">
-                                    <label for="companyName" class="form-label text-sm font-medium text-secondary">
-                                        Company Name (Optional)
-                                    </label>
-                                    <input type="text" class="form-control rounded-0 input-lg" id="companyName"
-                                        placeholder="Wipro">
-                                </div>
 
-                                <div class="mb-4 form-field">
-                                    <label for="country" class="form-label text-sm font-medium text-secondary">
-                                        Country / Region<span class="ps-1">*</span>
-                                    </label>
-                                    <input type="text" class="form-control rounded-0 input-lg" id="country"
-                                        placeholder="India">
-                                </div>
-                            </div>
-                            <div class="checkout-form">
-                                <div class="mb-4 form-field">
-                                    <label for="address1" class="form-label text-sm font-medium text-secondary">
-                                        Street Address<span class="ps-1">*</span>
-                                    </label>
-                                    <input type="text" class="form-control rounded-0 input-lg" id="address1"
-                                        placeholder="House no. and street name">
-                                </div>
-
-                                <div class="mb-4 form-field">
-                                    <label for="address2" class="form-label text-sm font-medium text-secondary">
-                                        Street Address2<span class="ps-1">*</span>
-                                    </label>
-                                    <input type="text" class="form-control rounded-0 input-lg" id="address2"
-                                        placeholder="Apartment, suite, unit, etc. (optional)">
-                                </div>
-                            </div>
-                            <div class="checkout-form">
-                                <div class="mb-4 form-field">
-                                    <label for="town" class="form-label text-sm font-medium text-secondary">
-                                        Town / City<span class="ps-1">*</span>
-                                    </label>
-                                    <input type="text" class="form-control rounded-0 input-lg" id="town"
-                                        placeholder="Indore">
-                                </div>
-
-                                <div class="mb-4 form-field">
-                                    <label for="state" class="form-label text-sm font-medium text-secondary">
-                                        State<span class="ps-1">*</span>
-                                    </label>
-                                    <input type="text" class="form-control rounded-0 input-lg" id="state"
-                                        placeholder="Madhya Pradesh">
-                                </div>
-                            </div>
-                            <div class="checkout-form">
-                                <div class="mb-4 form-field">
-                                    <label for="pincode" class="form-label text-sm font-medium text-secondary">
-                                        PIN Code<span class="ps-1">*</span>
-                                    </label>
-                                    <input type="text" class="form-control rounded-0 input-lg" id="pincode"
-                                        placeholder="455334">
-                                </div>
-
-                                <div class="mb-4 form-field">
-                                    <label for="phone" class="form-label text-sm font-medium text-secondary">
-                                        Phone<span class="ps-1">*</span>
-                                    </label>
-                                    <input type="text" class="form-control rounded-0 input-lg" id="phone"
-                                        placeholder="0 881 983 8454">
-                                </div>
-                            </div>
-                            <div class="checkout-form">
-                                <div class="mb-4 form-field">
-                                    <label for="emialAddress" class="form-label text-sm font-medium text-secondary">
-                                        Email Address<span class="ps-1">*</span>
-                                    </label>
-                                    <input type="email" class="form-control rounded-0 input-lg" id="emialAddress"
-                                        placeholder="dev@gmail.com">
-                                </div>
-
-                                <div class="mb-4 form-field position-relative crtpass">
-                                    <label for="acPassword" class="form-label text-sm font-medium text-secondary">
-                                        Create Account Password<span class="ps-1">*</span>
-                                    </label>
-                                    <input type="password" class="form-control rounded-0 input-lg pe-5" id="acPassword"
-                                        placeholder="********">
-                                    <img src="assets/images/icon/visible.png"
-                                        class="position-absolute eye-visible2 cursor-pointer" />
-                                    <img src="assets/images/icon/not-visible.png"
-                                        class="position-absolute eye-visible2 cursor-pointer" style="display:none;" />
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <p class="text-base font-medium text-primary mb-4 your-order">Your Order</p>
+                    </div> 
+                    <div class="col-lg-9 profile-order">
+                        <p class="text-2xl font-normal text-primary mb-4 font-rufina mb-3">Order</p>
                         <div class="checkout-page-details">
 
                             <div class="product-mini-cart-wrapper">
@@ -404,13 +329,6 @@
 
                             </div>
                         </div>
-                    </div>
-                    <p class="text-base font-medium text-primary mt-3 mb-3 ">Payment Process</p>
-                    <button class="btn text-start py-0 border-0 px-12"><img src="assets/images/ccavenue.png" alt="ccavenue"></button>
-                    <p class="text-lg font-normal text-secondary py-3 font-rufina">Pay securely by Credit or Debit card or internet banking through CCAvenue Secure Servers.</p>
-                    <div class="btns d-lg-flex d-grid gap-4">
-                        <button class="btn btn-outline btn-sm min-width-190">Cancel</button>
-                        <button class="btn btn-primary btn-sm min-width-190">Place order</button>
                     </div>
                 </div>
             </div>
