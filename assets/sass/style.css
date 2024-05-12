@@ -1641,33 +1641,23 @@ section .main-heading {
   border: 1px solid #EEE8E4 !important;
 }
 .btn.btn-outline {
-  background-color: #ffffff !important;
-  border: 1px solid #CDCDCD !important;
-  color: #3A332B !important;
-}
-.btn.btn-outline:hover {
-  background-color: #3A332B !important;
-  color: #CDCDCD !important;
-}
-.btn.btn-outline {
   width: 180px;
   height: 45px;
   cursor: pointer;
   background: transparent;
-  border: 3px solid #FC0041;
   outline: none;
-  transition: 1s ease-in-out;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 16.9px;
   color: #3A332B;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #CDCDCD !important;
 }
 .btn.btn-outline:hover {
-  transition: 1s ease-in-out;
   background: transparent;
+  color: #CDCDCD !important;
 }
 .btn.btn-outline:before {
   left: 50%;
@@ -1839,10 +1829,12 @@ button:focus:not(:focus-visible),
   transform: scale(1.05);
   color: #ffffff !important;
 }
-.btn.btn-white-bg::after {
-  background-color: #ffffff !important;
-  color: #3A332B !important;
+.btn.btn-insta .white {
+  display: none;
 }
-.btn.btn-white-bg:hover {
-  color: #3A332B !important;
+.btn.btn-insta:hover .dark {
+  display: none;
+}
+.btn.btn-insta:hover .white {
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
