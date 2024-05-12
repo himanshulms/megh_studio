@@ -1795,13 +1795,8 @@ section {
 .login-details {
 
     .eye-visible,
-<<<<<<< Updated upstream
     .eye-visible1{
         bottom: 12px;
-=======
-    .eye-visible1 {
-        bottom: 8px;
->>>>>>> Stashed changes
         right: 10px;
     }
 }
@@ -2037,14 +2032,6 @@ section {
 
     &.btn-outline {
         background-color: $white !important;
-<<<<<<< Updated upstream
-        border: 1px solid  $stroke-color !important;
-        color: $primary-color;
-        // &:hover {
-        //     background-color: $primary-color !important;
-        //     color: $stroke-color !important;
-        // } 
-=======
         border: 1px solid $stroke-color !important;
         color: $primary-color !important;
 
@@ -2080,7 +2067,6 @@ section {
             top: 0;
             transition-duration: 0.4s;
         }
->>>>>>> Stashed changes
     }
 //     &.btn-outline {
 //         width: 180px;

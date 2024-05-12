@@ -1643,7 +1643,36 @@ section .main-heading {
 .btn.btn-outline {
   background-color: #ffffff !important;
   border: 1px solid #CDCDCD !important;
+  color: #3A332B !important;
+}
+.btn.btn-outline:hover {
+  background-color: #3A332B !important;
+  color: #CDCDCD !important;
+}
+.btn.btn-outline {
+  width: 180px;
+  height: 45px;
+  cursor: pointer;
+  background: transparent;
+  border: 3px solid #FC0041;
+  outline: none;
+  transition: 1s ease-in-out;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16.9px;
   color: #3A332B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn.btn-outline:hover {
+  transition: 1s ease-in-out;
+  background: transparent;
+}
+.btn.btn-outline:before {
+  left: 50%;
+  top: 0;
+  transition-duration: 0.4s;
 }
 .btn.btn-sm {
   padding: 7px;
