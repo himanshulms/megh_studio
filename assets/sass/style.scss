@@ -1713,6 +1713,35 @@ section {
             min-width: 100%;
             width: 100%;
         }
+        &.size-wrap {
+            min-width: 535px; 
+            @media (max-width: 575px) {
+                padding: 16px;
+                min-width: 100%;
+                width: 100%;
+            }
+            .custom-dropdown-data {
+                flex: 1 1 auto;
+                .nav-dropdown {
+                    border: 1px solid $stroke-color;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    .dropdown {
+                        padding: 0;
+                        width: 180px;
+                        ul.dropdown-menu {
+                            width: 225px;
+                            padding: 0;
+                            margin-top: 40px !important;
+                            margin-left: -13px !important;
+                            transform: unset !important;
+                        }
+                    }
+                }
+            }
+        }
 
         &.filter {
             .offcanvas-header {
@@ -1856,45 +1885,31 @@ section {
                         content: unset;
                     }
                 }
-
                 a {
                     font-size: $text-base;
                     font-weight: $font-normal;
                     color: $primary-color;
-                    text-decoration: none;position: relative;
-                    &::after {
-                        display: block;
-                        content: '';
-                        border-bottom: solid 3px $primary-color;
-                        transform: scaleX(0);
-                        transition: transform 750ms ease-in-out;
-                        transform-origin: 0% 50%;
-                      }
-                      &:hover:after { transform: scaleX(1); }
+                    text-decoration: none;
                 }
             }
         }
     }
-
     .bg-footer {
         padding: 40px;
-
         @media (max-width: 992px) {
             padding: 10px;
         }
-
         .footer-data2 {
             &.border-left-right {
                 border-left: 1px solid $stroke-color;
                 border-right: 1px solid $stroke-color;
-
                 @media (max-width: 992px) {
                     border: 0;
                 }
+              
 
             }
         }
-
         .footer-data3 {
             .email-input {
                 &.w-255 {
@@ -1927,7 +1942,20 @@ section {
                 }
             }
         }
-
+    }
+    .footer-top, .footer-data2, .footer-data3 {
+        a {
+            position: relative;
+            &::after {
+                display: block;
+                content: '';
+                border-bottom: solid 3px $primary-color;
+                transform: scaleX(0);
+                transition: transform 750ms ease-in-out;
+                transform-origin: 0% 50%;
+                }
+                &:hover:after { transform: scaleX(1); }
+        }
     }
 }
 

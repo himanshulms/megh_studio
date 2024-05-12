@@ -1395,6 +1395,37 @@ section .main-heading {
     width: 100%;
   }
 }
+.navigation-left.login-right.size-wrap {
+  min-width: 535px;
+}
+@media (max-width: 575px) {
+  .navigation-left.login-right.size-wrap {
+    padding: 16px;
+    min-width: 100%;
+    width: 100%;
+  }
+}
+.navigation-left.login-right.size-wrap .custom-dropdown-data {
+  flex: 1 1 auto;
+}
+.navigation-left.login-right.size-wrap .custom-dropdown-data .nav-dropdown {
+  border: 1px solid #CDCDCD;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.navigation-left.login-right.size-wrap .custom-dropdown-data .nav-dropdown .dropdown {
+  padding: 0;
+  width: 180px;
+}
+.navigation-left.login-right.size-wrap .custom-dropdown-data .nav-dropdown .dropdown ul.dropdown-menu {
+  width: 225px;
+  padding: 0;
+  margin-top: 40px !important;
+  margin-left: -13px !important;
+  transform: unset !important;
+}
 .navigation-left.login-right.filter .offcanvas-header {
   padding: 36px 36px 0 36px;
 }
@@ -1501,18 +1532,6 @@ section .main-heading {
   font-weight: 400;
   color: #3A332B;
   text-decoration: none;
-  position: relative;
-}
-.footer-wrap .footer-top ul li a::after {
-  display: block;
-  content: "";
-  border-bottom: solid 3px #3A332B;
-  transform: scaleX(0);
-  transition: transform 750ms ease-in-out;
-  transform-origin: 0% 50%;
-}
-.footer-wrap .footer-top ul li a:hover:after {
-  transform: scaleX(1);
 }
 .footer-wrap .bg-footer {
   padding: 40px;
@@ -1553,6 +1572,20 @@ section .main-heading {
   .footer-wrap .bg-footer .footer-data3 .mail-link {
     word-break: break-all;
   }
+}
+.footer-wrap .footer-top a, .footer-wrap .footer-data2 a, .footer-wrap .footer-data3 a {
+  position: relative;
+}
+.footer-wrap .footer-top a::after, .footer-wrap .footer-data2 a::after, .footer-wrap .footer-data3 a::after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #3A332B;
+  transform: scaleX(0);
+  transition: transform 750ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+.footer-wrap .footer-top a:hover:after, .footer-wrap .footer-data2 a:hover:after, .footer-wrap .footer-data3 a:hover:after {
+  transform: scaleX(1);
 }
 
 .w-290 {

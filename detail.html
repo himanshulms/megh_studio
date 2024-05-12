@@ -895,116 +895,199 @@
     </div>
     
     <div id="sizeSection">
-        <div class="offcanvas offcanvas-end navigation-left login-right filter p-0" id="size" aria-labelledby="sizeLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title text-2xl font-normal font-rufina" id="sizeLabel">Size guide</h5>
-                <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body position-relative p-0">
-                <div class="login-details h-100 d-flex justify-content-between flex-column">
-                    <div class="accordion accordion-flush accordion1 pt-0" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                    aria-expanded="false" aria-controls="flush-collapseOne">
-                                    <div class="font-medium text-base text-primary">
-                                        <span>Category</span>
-                                        <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
-                                            alt="arrow-top" width="15" />
+        <div id="sizeSection">
+            <div class="offcanvas offcanvas-end navigation-left login-right size-wrap p-36" id="size" aria-labelledby="sizeLabel">
+                <div class="offcanvas-header p-0 mb-4">
+                    <h5 class="offcanvas-title text-2xl font-normal font-rufina" id="sizeLabel">Size guide</h5>
+                    <button type="button" class="btn-close custom-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body position-relative p-0">
+                    <div class="d-lg-flex gap-3 justify-content-between">
+                        <div class="dropdown-data custom-dropdown-data">
+                            <label class="text-sm font-medium text-secondary">Line</label>
+                            <ul class="nav nav-dropdown">          
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle border-0 text-base text-primary font-medium  text-decoration-none" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">New arrival</a>
+                                  <ul class="dropdown-menu">
+                                    <li class="dropdown-menu-li">
+                                        <span class="text-base text-primary font-medium">Women</span>
+                                    </li><hr class="dropdown-divider m-0">
+                                    <li class="dropdown-menu-li">
+                                        <span class="text-base text-primary font-medium">Man</span>
+                                    </li><hr class="dropdown-divider m-0">
+                                    <li class="dropdown-menu-li">
+                                        <span class="text-base text-primary font-medium">Price - low to high</span>
+                                    </li>
+                                  
+                                  </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-data custom-dropdown-data">
+                            <label class="text-sm font-medium text-secondary">Line</label>
+                            <ul class="nav nav-dropdown">          
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle border-0 text-base text-primary font-medium  text-decoration-none" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">New arrival</a>
+                                  <ul class="dropdown-menu">
+                                    <li class="dropdown-menu-li">
+                                        <span class="text-base text-primary font-medium">Women</span>
+                                    </li><hr class="dropdown-divider m-0">
+                                    <li class="dropdown-menu-li">
+                                        <span class="text-base text-primary font-medium">Man</span>
+                                    </li><hr class="dropdown-divider m-0">
+                                    <li class="dropdown-menu-li">
+                                        <span class="text-base text-primary font-medium">Price - low to high</span>
+                                    </li>
+                                  
+                                  </ul>
+                                </li>
+                            </ul>
+                        </div>  
+                    </div>
+                    <div class="sizeguide-accordion">
+                        <div class="accordion accordion-flush accordion1 pt-0" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <div class="font-semibold text-primary text-base mb-2 mt-3">
+                                        <span>Jumpsuits</span>
+                                        <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow" alt="arrow-top" width="15" />
                                     </div>
                                 </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">
-                                    <div class="d-flex align-items-center justify-content-between mb-4">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck104">
-                                            <label class="form-check-label text-sm font-medium text-secondary"
-                                                for="exampleCheck104">Saree</label>
+                                    <table class="table table-bordered1 border table-hovers text-center mb-4">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col" class="font-medium text-secondary text-sm">Size</th>
+                                            <th scope="col" class="font-medium text-secondary text-sm">Bust</th>
+                                            <th scope="col" class="font-medium text-secondary text-sm">Waist</th>
+                                            <th scope="col" class="font-medium text-secondary text-sm">Hip</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="font-medium text-primary text-sm">XXS</td>
+                                            <td class="font-medium text-primary text-sm">78</td>
+                                            <td class="font-medium text-primary text-sm">59</td>
+                                            <td class="font-medium text-primary text-sm">86</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="font-medium text-primary text-sm">XS</td>
+                                            <td class="font-medium text-primary text-sm">78</td>
+                                            <td class="font-medium text-primary text-sm">59</td>
+                                            <td class="font-medium text-primary text-sm">86</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="font-medium text-primary text-sm">S</td>
+                                            <td class="font-medium text-primary text-sm">78</td>
+                                            <td class="font-medium text-primary text-sm">59</td>
+                                            <td class="font-medium text-primary text-sm">86</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="font-medium text-primary text-sm">M</td>
+                                            <td class="font-medium text-primary text-sm">78</td>
+                                            <td class="font-medium text-primary text-sm">59</td>
+                                            <td class="font-medium text-primary text-sm">86</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="font-medium text-primary text-sm">L</td>
+                                            <td class="font-medium text-primary text-sm">78</td>
+                                            <td class="font-medium text-primary text-sm">59</td>
+                                            <td class="font-medium text-primary text-sm">86</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="font-medium text-primary text-sm">XL</td>
+                                            <td class="font-medium text-primary text-sm">78</td>
+                                            <td class="font-medium text-primary text-sm">59</td>
+                                            <td class="font-medium text-primary text-sm">86</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="font-medium text-primary text-sm">XXl</td>
+                                            <td class="font-medium text-primary text-sm">78</td>
+                                            <td class="font-medium text-primary text-sm">59</td>
+                                            <td class="font-medium text-primary text-sm">86</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="font-medium text-primary text-sm">1XL</td>
+                                            <td class="font-medium text-primary text-sm">78</td>
+                                            <td class="font-medium text-primary text-sm">59</td>
+                                            <td class="font-medium text-primary text-sm">86</td>
+                                          </tr>
+                                       
+                                        </tbody>
+                                    </table>
+                                    <div class="font-semibold text-primary text-base mb-2 mt-3">How to measure yourself</div>
+                                        
+                                    <div class="measurement d-flex justify-content-around">
+                                        <div class="image-text">
+                                            <a href="detail.html" class="text-decoration-none">
+                                                <div class="card border-0">
+                                                    <div class="card-image">
+                                                        <img src="assets/images/icon/measure.png" alt="product-image">
+                                                    </div>
+                                                    <div class="card-body pb-3 ps-0">
+                                                        <h4 class="card-title mb-1 text-primary text-base font-semibold" title="Ombre Saree In Ash Blue">Bust</h4>
+                                                        <p class="card-price mb-0 text-secondary text-sm font-semibold">Measure around the bust at the most protruding point.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+    
                                         </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between mb-4">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck103"
-                                                checked>
-                                            <label class="form-check-label text-sm font-medium text-secondary"
-                                                for="exampleCheck103">Lehengas</label>
+                                        <div class="image-text">
+                                            <a href="detail.html" class="text-decoration-none">
+                                                <div class="card border-0">
+                                                    <div class="card-image">
+                                                        <img src="assets/images/icon/measure.png" alt="product-image">
+                                                    </div>
+                                                    <div class="card-body pb-3 ps-0">
+                                                        <h4 class="card-title mb-1 text-primary text-base font-semibold" title="Ombre Saree In Ash Blue">Bust</h4>
+                                                        <p class="card-price mb-0 text-secondary text-sm font-semibold">Measure around the bust at the most protruding point.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+    
                                         </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between mb-4">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck102">
-                                            <label class="form-check-label text-sm font-medium text-secondary"
-                                                for="exampleCheck102">Suits</label>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between mb-4">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck101">
-                                            <label class="form-check-label text-sm font-medium text-secondary"
-                                                for="exampleCheck101">Gown</label>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between mb-4">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input rounded-0" id="exampleCheck100">
-                                            <label class="form-check-label text-sm font-medium text-secondary"
-                                                for="exampleCheck100">Kids wear</label>
+                                        <div class="image-text">
+                                            <a href="detail.html" class="text-decoration-none">
+                                                <div class="card border-0">
+                                                    <div class="card-image">
+                                                        <img src="assets/images/icon/measure.png" alt="product-image">
+                                                    </div>
+                                                    <div class="card-body pb-3 ps-0">
+                                                        <h4 class="card-title mb-1 text-primary text-base font-semibold" title="Ombre Saree In Ash Blue">Bust</h4>
+                                                        <p class="card-price mb-0 text-secondary text-sm font-semibold">Measure around the bust at the most protruding point.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+    
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                    aria-expanded="false" aria-controls="flush-collapseTwo">
-                                    <div class="font-medium text-base text-primary">
-                                        <span>Material</span>
-                                        <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
-                                            alt="arrow-top" width="15" />
+                                    
                                     </div>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
+                                    
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    <div class="font-medium text-base text-primary">
+                                        <span>International size equivalents</span>
+                                        <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow" alt="arrow-top" width="15" />
+                                    </div></button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">
                                     <p>
-                                        Payments can be made by credit or debit card, or bank transfer for purchases made
-                                        over the phone through client Services. Accepted credit / debit cards are Visa and
-                                        Mastercard.
+                                        Payments can be made by credit or debit card, or bank transfer for purchases made over the phone through client Services. Accepted credit / debit cards are Visa and Mastercard.
                                     </p>
-    
+                                   
                                 </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed d-flex flex-column p-0 my-4 align-items-start"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                    aria-expanded="false" aria-controls="flush-collapseThree">
-                                    <div class="font-medium text-base text-primary">
-                                        <span>Color</span>
-                                        <img src="assets/images/icon/arrow-bottom.png" class="img-fluid accordion-arrow"
-                                            alt="arrow-top" width="15" />
-                                    </div>
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body p-0 pb-4 text-sm font-medium text-primary">Placeholder content
-                                    for this accordion, which is intended to demonstrate the class. This is the third item's
-                                    accordion body. Nothing more exciting happening here in terms of content, but just
-                                    filling up the space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world application.</div>
-                            </div>
+                              </div>
+                            </div>                            
                         </div>
                     </div>
-    
                 </div>
             </div>
         </div>
