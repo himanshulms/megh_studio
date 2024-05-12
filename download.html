@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Megh Studio | Order</title>
+    <title>Megh Studio | Download</title>
     <!-- google font link -->
     <link href="./assets/font/font.css" rel="stylesheet">
     <!-- bootstrap links -->
@@ -21,150 +21,168 @@
 
 <body>
     <!-- use sepreate file to edit header do not remove it -->
-    <div class="wrapper h-100">
-        <header id="header" class="header-wrapper fixed-top">
-            <div class="container-fluid px-lg-5 px-3">
-              <div class="d-flex py-4 align-items-center">
-                  <div class="col-2 col-lg-1 px-md-0  gap-2">
-                      <div type="button" class="d-flex align-items-center" data-bs-toggle="offcanvas" data-bs-target="#navigation"
-                          aria-controls="navigation">
-                          <img src="assets/images/icon/menu.png" class="img-fluid" />
-                          <span class="text-base font-medium text-uppercase ps-2 pt-1 d-none d-lg-block">Menu</span>
-                      </div>
-                  </div>
-                  <div class="col-7 col-lg-9 px-md-0 text-center">
-                      <a href="index.html">
-                          <img src="assets/images/icon/logo.png" class="img-fluid main-logo" alt="logo"/>
-                      </a>
-                  </div>
-                  <div class="col-3 col-lg-2 px-md-0 position-relative">
-                      <div class="imgs-login d-flex align-items-center gap-4 justify-content-end">
-                          <div class="search-wrapper  d-flex align-items-center justify-content-center">
-                              <img src="assets/images/icon/search.png" class="imgs-login-inner cursor-pointer" />
-                          </div>
-                          <div
-                              class="wishlist-wrapper imgs-login-iner d-none d-lg-block align-items-center justify-content-center">
-                              <a href="wishlist.html">
-                                  <img src="assets/images/icon/wishlist.png" class="imgs-login-inner" />
-                              </a>
-                          </div>
-                          <div class="custom-dropdown shopping-wrapper ">
-                              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <img src="assets/images/icon/shopping.png" class="imgs-login-inner cursor-pointer" alt="user" />
-                              </a>
-                              <div class="dropdown-menu rounded-0 mt-3 shopping-wrapper-inner">
-                                  <div class="dropdown-menu-inner">
-                                      <div class="product-mini-cart-wrapper">
-                                          <p class="text-base font-medium text-primary mb-4">Shopping bag (1)</p>
-                                          <div class="product-mini-cart-details d-sm-flex gap-2 mb-5">
-                                              <div
-                                                  class="product-mini-cart-img mb-2 mb-sm-0 d-flex align-items-center justify-content-center">
-                                                  <img src="assets/images/icon/shoping-img.png" alt="cart-img img-fluid" />
-                                              </div>
-                                              <div
-                                                  class="product-mini-cart-data d-flex justify-content-between flex-column w-100">
-                                                  <div class="product-mini-cart-data-inner-content">
-                                                      <p class="text-sm font-normal text-primary font-rufina mb-0">Olive
-                                                          Half-Daisies Chiffon
-                                                          Lehenaga</p>
-                                                      <div class="quantity text-base font-medium">
-                                                          <span class="text-secondary text-sm font-medium me-2">Quantity:</span>
-                                                          <span class="text-primary text-sm font-medium">1</span>
-                                                      </div>
-                                                      <div class="size text-base font-medium">
-                                                          <span class="text-secondary text-sm font-medium me-2">Size:</span>
-                                                          <span class="text-primary text-sm font-medium">S</span>
-                                                      </div>
-                                                      <div class="color text-base font-medium">
-                                                          <span class="text-secondary text-sm font-medium me-2">Color:</span>
-                                                          <span class="text-primary text-sm font-medium">Pink</span>
-                                                      </div>
-                                                  </div>
-                                                  <div class="product-mini-cart-data-inner-amount w-100">
-                                                      <div
-                                                          class="product-mini-cart-data d-flex justify-content-between text-base font-medium">
-                                                          <div
-                                                              class="product-mini-cart-data-inner-amount text-base font-medium text-primary d-flex align-items-center justify-content-between  w-100">
-                                                              <div class="text-primary">₹10,500.00</div>
-                                                              <div><a href="#" class="text-primary ">Remove</a></div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="text-base d-flex align-items-center justify-content-between w-100 mb-2">
-                                              <div class="text-secondary text-sm font-semibold">Subtotal</div>
-                                              <div class="text-primary text-sm font-medium">₹10,500.00</div>
-                                          </div>
-                                          <div
-                                              class="text-base font-medium d-flex align-items-center justify-content-between w-100 mb-2">
-                                              <div class="text-secondary text-sm font-medium">Delivery</div>
-                                              <div class="text-primary text-sm font-medium">Free</div>
-                                          </div>
-                                          <div class="my-4 btns d-lg-flex d-grid gap-4">
-                                              <a href="cart.html" class="btn btn-outline btn-sm w-100 text-decoration-none">View shopping bag</a>
-                                              <a href="checkout.html" class="btn btn-primary btn-sm w-100 text-decoration-none">Checkout</a>
-                                          </div>
-                                          <p class="mb-0 text-sm text-secondary font-medium text-center">Taxes included</p>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div type="button" class="login-wrapper d-none d-lg-block" data-bs-toggle="offcanvas"
-                              data-bs-target="#login" aria-controls="login">
-                              <button class="btn btn-primary btn-sm min-width-115 btn-animation"><span>Login</span></button>
-                          </div>
-                          <div class="user-wrapper d-none d-lg-block">
-                              <div class="custom-dropdown">
-                                  <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                      aria-expanded="false">
-                                      <img src="assets/images/icon/user.png" class="imgs-login-inner cursor-pointer" alt="user" />
-                                  </a>
-                                  <ul class="dropdown-menu rounded-0 mt-3">
-                                      <li class="text-xl font-normal dropdown-menu-inner dropdown-item py-2 px-4 font-rufina">
-                                          Hello Dev</li>
-                                      <li class="dropdown-menu-inner">
-                                          <a class="dropdown-item py-2" href="order.html">
-                                              <img src="assets/images/icon/order.png" class="me-2" alt="order" />Order
-                                          </a>
-                                      </li>
-                                      <li class="dropdown-menu-inner">
-                                          <a class="dropdown-item py-2" href="shipping.html">
-                                              <img src="assets/images/icon/shipping.png" class="me-2" alt="shipping" />Shipping &
-                                              Billing
-                                              Address
-                                          </a>
-                                      </li>
-                                      <li class="dropdown-menu-inner">
-                                          <a class="dropdown-item py-2" href="download.html">
-                                              <img src="assets/images/icon/download.png" class="me-2" alt="download" />Download
-                                          </a>
-                                      </li>
-                                      <li class="dropdown-menu-inner">
-                                          <a class="dropdown-item py-2" href="account.html">
-                                              <img src="assets/images/icon/account.png" class="me-2" alt="account" />Account
-                                              Details
-                                          </a>
-                                      </li>
-                                      <li class="dropdown-menu-inner">
-                                          <a class="dropdown-item py-2" href="coupon.html">
-                                              <img src="assets/images/icon/coupon.png" class="me-2" alt="coupon" />My Coupon
-                                          </a>
-                                      </li>
-                                      <li class="dropdown-menu-inner">
-                                          <a class="dropdown-item py-2" href="index.html">
-                                              <img src="assets/images/icon/logout.png" class="me-2" alt="logout" />Logout
-                                          </a>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </header>
-        <main class="main-wrapper">
+    <header id="header">
+        <div class="container-fluid px-lg-5 px-3">
+            <div class="row py-4 align-items-center">
+                <div class="col-2 col-lg-1 px-md-0  gap-2">
+                    <div type="button" class="d-flex align-items-center" data-bs-toggle="offcanvas"
+                        data-bs-target="#navigation" aria-controls="navigation">
+                        <img src="assets/images/icon/menu.png" class="img-fluid" />
+                        <span class="text-base font-medium text-uppercase ps-2 pt-1 d-none d-lg-block">Menu</span>
+                    </div>
+                </div>
+                <div class="col-7 col-lg-9 px-md-0 text-center">
+                    <a href="index.html">
+                        <img src="assets/images/icon/logo.png" class="img-fluid main-logo" alt="logo" />
+                    </a>
+                </div>
+                <div class="col-3 col-lg-2 px-md-0 position-relative">
+                    <div class="imgs-login d-flex align-items-center gap-4 justify-content-end">
+                        <div class="search-wrapper  d-flex align-items-center justify-content-center">
+                            <img src="assets/images/icon/search.png" class="imgs-login-inner cursor-pointer" />
+                        </div>
+                        <div
+                            class="wishlist-wrapper imgs-login-iner d-none d-lg-block align-items-center justify-content-center">
+                            <a href="wishlist.html">
+                                <img src="assets/images/icon/wishlist.png" class="imgs-login-inner" />
+                            </a>
+                        </div>
+                        <div class="custom-dropdown shopping-wrapper ">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/images/icon/shopping.png" class="imgs-login-inner cursor-pointer"
+                                    alt="user" />
+                            </a>
+                            <div class="dropdown-menu rounded-0 mt-3 shopping-wrapper-inner">
+                                <div class="dropdown-menu-inner">
+                                    <div class="product-mini-cart-wrapper">
+                                        <p class="text-base font-medium text-primary mb-4">Shopping bag (1)</p>
+                                        <div class="product-mini-cart-details d-sm-flex gap-2 mb-5">
+                                            <div
+                                                class="product-mini-cart-img mb-2 mb-sm-0 d-flex align-items-center justify-content-center">
+                                                <img src="assets/images/icon/shoping-img.png"
+                                                    alt="cart-img img-fluid" />
+                                            </div>
+                                            <div
+                                                class="product-mini-cart-data d-flex justify-content-between flex-column w-100">
+                                                <div class="product-mini-cart-data-inner-content">
+                                                    <p class="text-sm font-normal text-primary font-rufina mb-0">Olive
+                                                        Half-Daisies Chiffon
+                                                        Lehenaga</p>
+                                                    <div class="quantity text-base font-medium">
+                                                        <span
+                                                            class="text-secondary text-sm font-medium me-2">Quantity:</span>
+                                                        <span class="text-primary text-sm font-medium">1</span>
+                                                    </div>
+                                                    <div class="size text-base font-medium">
+                                                        <span
+                                                            class="text-secondary text-sm font-medium me-2">Size:</span>
+                                                        <span class="text-primary text-sm font-medium">S</span>
+                                                    </div>
+                                                    <div class="color text-base font-medium">
+                                                        <span
+                                                            class="text-secondary text-sm font-medium me-2">Color:</span>
+                                                        <span class="text-primary text-sm font-medium">Pink</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-mini-cart-data-inner-amount w-100">
+                                                    <div
+                                                        class="product-mini-cart-data d-flex justify-content-between text-base font-medium">
+                                                        <div
+                                                            class="product-mini-cart-data-inner-amount text-base font-medium text-primary d-flex align-items-center justify-content-between  w-100">
+                                                            <div class="text-primary">₹10,500.00</div>
+                                                            <div><a href="#" class="text-primary ">Remove</a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="text-base d-flex align-items-center justify-content-between w-100 mb-2">
+                                            <div class="text-secondary text-sm font-semibold">Subtotal</div>
+                                            <div class="text-primary text-sm font-medium">₹10,500.00</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100 mb-2">
+                                            <div class="text-secondary text-sm font-medium">Delivery</div>
+                                            <div class="text-primary text-sm font-medium">Free</div>
+                                        </div>
+                                        <div class="my-4 btns d-flex gap-4">
+                                            <a href="cart.html"
+                                                class="btn btn-outline btn-sm w-100 text-decoration-none">View shopping
+                                                bag</a>
+                                            <a href="checkout.html"
+                                                class="btn btn-primary btn-sm w-100 text-decoration-none">Checkout</a>
+                                        </div>
+                                        <p class="mb-0 text-sm text-secondary font-medium text-center">Taxes included
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div type="button" class="login-wrapper d-none d-lg-block" data-bs-toggle="offcanvas"
+                            data-bs-target="#login" aria-controls="login">
+                            <button
+                                class="btn btn-primary btn-sm min-width-115 btn-animation"><span>Login</span></button>
+                        </div>
+                        <div class="user-wrapper d-none d-lg-block">
+                            <div class="custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="assets/images/icon/user.png" class="imgs-login-inner cursor-pointer"
+                                        alt="user" />
+                                </a>
+                                <ul class="dropdown-menu rounded-0 mt-3">
+                                    <li
+                                        class="text-xl font-normal dropdown-menu-inner dropdown-item py-2 px-4 font-rufina">
+                                        Hello Dev</li>
+                                    <li class="dropdown-menu-inner">
+                                        <a class="dropdown-item py-2" href="order.html">
+                                            <img src="assets/images/icon/order.png" class="me-2" alt="order" />Order
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-menu-inner">
+                                        <a class="dropdown-item py-2" href="shipping.html">
+                                            <img src="assets/images/icon/shipping.png" class="me-2"
+                                                alt="shipping" />Shipping &
+                                            Billing
+                                            Address
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-menu-inner">
+                                        <a class="dropdown-item py-2" href="download.html">
+                                            <img src="assets/images/icon/download.png" class="me-2"
+                                                alt="download" />Download
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-menu-inner">
+                                        <a class="dropdown-item py-2" href="account.html">
+                                            <img src="assets/images/icon/account.png" class="me-2"
+                                                alt="account" />Account
+                                            Details
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-menu-inner">
+                                        <a class="dropdown-item py-2" href="coupon.html">
+                                            <img src="assets/images/icon/coupon.png" class="me-2" alt="coupon" />My
+                                            Coupon
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-menu-inner">
+                                        <a class="dropdown-item py-2" href="index.html">
+                                            <img src="assets/images/icon/logout.png" class="me-2" alt="logout" />Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
         <!-- detail section start -->
 
         <section class="profile-section ">
@@ -172,9 +190,9 @@
 
                 <div class="row ">
                     <div class="col-lg-3 pb-lg-0 pb-4 profile">
-                        <p class="text-2xl font-normal text-primary mb-4 font-rufina">Hi Dev</p>
+                        <p class="text-2xl font-normal text-primary mb-4 font-rufina mb-3">Hi Dev</p>
                         <ul class="mb-3 profile-menu">
-                            <li class="active">
+                            <li>
                                 <a href="order.html">
                                     Order
                                 </a>
@@ -184,7 +202,7 @@
                                     Shipping & Billing Address
                                 </a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="download.html">
                                     Download
                                 </a>
@@ -208,137 +226,305 @@
 
 
                     </div>
-                    <div class="col-lg-9 profile-order">
-                        <p class="text-2xl font-normal text-primary mb-4 font-rufina mb-3">Order</p>
-                        <div class="checkout-page-details">
-
-                            <div class="product-mini-cart-wrapper">
-                                <div class="delivery d-flex gap-2 align-items-center mb-4">
-                                    <div class="delivery-icon">
-                                        <img src="assets/images/delivery-icon.png" alt="delivery">
-                                    </div>
-                                    <div class="delivery-icon">
-                                        <p class="mb-0 text-base font-medium text-primary">Est Delivery</p>
-                                        <p class="mb-0 text-sm font-medium text-secondary">On Sat, 19 Sep</p>
-                                    </div>
-                                </div>
-                                <div class="product-mini-cart-details d-sm-flex gap-4 mb-4">
-                                    <div
-                                        class="product-mini-cart-img mb-2 mb-sm-0 d-flex align-items-center justify-content-center">
-                                        <img src="assets/images/icon/shoping-img.png" alt="cart-img img-fluid" />
-                                    </div>
-                                    <div
-                                        class="product-mini-cart-data d-flex justify-content-between flex-column w-100">
-                                        <div class="product-mini-cart-data-inner-content">
-                                            <p class="text-base font-normal text-primary font-rufina mb-0">Olive
-                                                Half-Daisies Chiffon
-                                                Lehenaga</p>
-                                            <div class="quantity text-base font-medium">
-                                                <span class="text-secondary text-base font-medium me-2">Quantity:</span>
-                                                <span class="text-primary text-base font-medium">1</span>
+                    <div class="col-lg-9 download-details">
+                        <p class="text-2xl font-normal text-primary mb-4 font-rufina">Download</p>
+                        <div class="d-flex flex-wrap gap-4">
+                            
+                                <div class="download-wrapper">
+                                    <div class="product-mini-cart-wrapper">
+        
+                                        <div class="delivery d-flex gap-2 align-items-center mb-4">
+                                            <div class="delivery-icon">
+                                                <img src="assets/images/delivery-icon.png" alt="delivery">
                                             </div>
-                                            <div class="size text-base font-medium">
-                                                <span class="text-secondary text-base font-medium me-2">Size:</span>
-                                                <span class="text-primary text-base font-medium">S</span>
-                                            </div>
-                                            <div class="color text-base font-medium">
-                                                <span class="text-secondary text-base font-medium me-2">Color:</span>
-                                                <span class="text-primary text-base font-medium">Pink</span>
+                                            <div class="delivery-icon">
+                                                <p class="mb-0 text-base font-medium text-primary">Delivered</p>
+                                                <p class="mb-0 text-sm font-medium text-secondary">On Sat, 19 Sep</p>
                                             </div>
                                         </div>
-                                        <div class="product-mini-cart-data-inner-amount w-100">
+                                        <div class="product-mini-cart-details d-sm-flex gap-4 mb-4">
                                             <div
-                                                class="product-mini-cart-data d-flex justify-content-between text-base font-medium">
-                                                <div
-                                                    class="product-mini-cart-data-inner-amount text-base font-medium text-primary d-flex align-items-center justify-content-between  w-100">
-                                                    <div class="text-primary text-base">₹10,500.00</div>
-                                                    <div><a href="#" class="text-primary text-sm">Cancel Order</a></div>
-                                                </div>
+                                                class="product-mini-cart-img mb-2 mb-sm-0 d-flex align-items-center justify-content-center">
+                                                <img src="assets/images/icon/shoping-img.png" alt="cart-img img-fluid" />
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="track-order">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="d-lg-flex justify-content-between">
-                                                <div class="order-tracking recent-completed">
-                                                    <p>Ordered<br><span class="orderd-date">11 Sep</span></p>
-                                                    <div class="process-desktop ordered "></div><div class="process-mobile ordered"></div>
-                                                </div>
-                                                <div class="order-tracking  recent-completed">
-                                                    <p>Processing</p>
-                                                    <div class="process-desktop processed"></div><div class="process-mobile processed"></div>
-                                                </div>
-                                                <div class="order-tracking completed">
-                                                    <p>Preparing to Ship</p>
-                                                    <div class="process-desktop prepared desktop"></div><div class="process-mobile prepared"></div>
-                                                </div>
-                                                <div class="order-tracking ">
-                                                    <p>Shipped</p>
-                                                    <div class="process-desktop shiped "></div><div class="process-mobile shiped "></div>
-                                                </div>
-                                                <div class="order-tracking ">
-                                                    <p>Delivered<br><span class="delivered-date">19 Sep</span></p>
-                                                    <div class="process-desktop delivered "></div><div class="process-mobile delivered "></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="product-mini-cart-wrapper">
-                                <div class="delivery d-flex gap-2 align-items-center mb-4">
-                                    <div class="delivery-icon">
-                                        <img src="assets/images/delivery-icon.png" alt="delivery">
-                                    </div>
-                                    <div class="delivery-icon">
-                                        <p class="mb-0 text-base font-medium text-primary">Delivered</p>
-                                        <p class="mb-0 text-sm font-medium text-secondary">On Sat, 19 Sep</p>
-                                    </div>
-                                </div>
-                                <div class="product-mini-cart-details d-sm-flex gap-4 mb-4">
-                                    <div
-                                        class="product-mini-cart-img mb-2 mb-sm-0 d-flex align-items-center justify-content-center">
-                                        <img src="assets/images/icon/shoping-img.png" alt="cart-img img-fluid" />
-                                    </div>
-                                    <div
-                                        class="product-mini-cart-data d-flex justify-content-between flex-column w-100">
-                                        <div class="product-mini-cart-data-inner-content">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <p class="text-base font-normal text-primary font-rufina mb-0">Olive
-                                                    Half-Daisies Chiffon
-                                                    Lehenaga</p>
-                                                <a href="#" class="text-primary text-sm font-medium">Download invoice</a>
-                                            </div>
-                                            <div class="quantity text-base font-medium">
-                                                <span class="text-secondary text-base font-medium me-2">Quantity:</span>
-                                                <span class="text-primary text-base font-medium">1</span>
-                                            </div>
-                                            <div class="size text-base font-medium">
-                                                <span class="text-secondary text-base font-medium me-2">Size:</span>
-                                                <span class="text-primary text-base font-medium">S</span>
-                                            </div>
-                                            <div class="color text-base font-medium">
-                                                <span class="text-secondary text-base font-medium me-2">Color:</span>
-                                                <span class="text-primary text-base font-medium">Pink</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-mini-cart-data-inner-amount w-100">
                                             <div
-                                                class="product-mini-cart-data d-flex justify-content-between text-base font-medium">
-                                                <div
-                                                    class="product-mini-cart-data-inner-amount text-base font-medium text-primary d-flex align-items-center justify-content-between  w-100">
-                                                    <div class="text-primary text-base">₹10,500.00</div>
-
+                                                class="product-mini-cart-data d-flex justify-content-between flex-column w-100">
+                                                <div class="product-mini-cart-data-inner-content">
+                                                    <p class="text-base font-normal text-primary font-rufina mb-0">Olive
+                                                        Half-Daisies Chiffon
+                                                        Lehenaga</p>
+                                                    <div class="quantity text-base font-medium">
+                                                        <span class="text-secondary text-base font-medium me-2">Quantity:</span>
+                                                        <span class="text-primary text-base font-medium">1</span>
+                                                    </div>
+                                                    <div class="size text-base font-medium">
+                                                        <span class="text-secondary text-base font-medium me-2">Size:</span>
+                                                        <span class="text-primary text-base font-medium">S</span>
+                                                    </div>
+                                                    <div class="color text-base font-medium">
+                                                        <span class="text-secondary text-base font-medium me-2">Color:</span>
+                                                        <span class="text-primary text-base font-medium">Pink</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-mini-cart-data-inner-amount w-100">
+                                                    <div
+                                                        class="product-mini-cart-data d-flex justify-content-between text-base font-medium">
+                                                        <div
+                                                            class="product-mini-cart-data-inner-amount text-base font-medium text-primary d-flex align-items-center justify-content-between  w-100">
+                                                            <div class="text-primary text-base">₹10,500.00</div>
+        
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="download-summary pt-4">
+                                        <p class="text-primary text-base font-medium mb-4">Product Summary</p>
+                                        <div class="text-base d-flex align-items-center justify-content-between w-100 mb-3">
+                                            <div class="text-secondary text-sm font-semibold">Subtotal</div>
+                                            <div class="text-primary text-sm font-medium">₹10,500.00</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100 mb-3">
+                                            <div class="text-secondary text-sm font-medium">Coupon discount</div>
+                                            <div class="text-primary text-sm font-medium">₹1,000</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100 mb-3">
+                                            <div class="text-secondary text-sm font-medium">Delivery</div>
+                                            <div class="text-primary text-sm font-medium">Free</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100">
+                                            <div class="text-secondary text-sm font-semibold">Total</div>
+                                            <div class="text-primary text-sm font-medium">₹30,000.00</div>
+                                        </div>
+        
+                                    </div>
                                 </div>
-                            </div>
+
+                                <div class="download-wrapper">
+                                    <div class="product-mini-cart-wrapper">
+        
+                                        <div class="delivery d-flex gap-2 align-items-center mb-4">
+                                            <div class="delivery-icon">
+                                                <img src="assets/images/cancel-icon.png" alt="cancel">
+                                            </div>
+                                            <div class="delivery-icon">
+                                                <p class="mb-0 text-base font-medium text-primary">Cancelled </p>
+                                                <p class="mb-0 text-sm font-medium text-secondary">on Fri, 7 Apr 2024 as per your request</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-mini-cart-details d-sm-flex gap-4 mb-4">
+                                            <div
+                                                class="product-mini-cart-img mb-2 mb-sm-0 d-flex align-items-center justify-content-center">
+                                                <img src="assets/images/icon/shoping-img.png" alt="cart-img img-fluid" />
+                                            </div>
+                                            <div
+                                                class="product-mini-cart-data d-flex justify-content-between flex-column w-100">
+                                                <div class="product-mini-cart-data-inner-content">
+                                                    <p class="text-base font-normal text-primary font-rufina mb-0">Olive
+                                                        Half-Daisies Chiffon
+                                                        Lehenaga</p>
+                                                    <div class="quantity text-base font-medium">
+                                                        <span class="text-secondary text-base font-medium me-2">Quantity:</span>
+                                                        <span class="text-primary text-base font-medium">1</span>
+                                                    </div>
+                                                    <div class="size text-base font-medium">
+                                                        <span class="text-secondary text-base font-medium me-2">Size:</span>
+                                                        <span class="text-primary text-base font-medium">S</span>
+                                                    </div>
+                                                    <div class="color text-base font-medium">
+                                                        <span class="text-secondary text-base font-medium me-2">Color:</span>
+                                                        <span class="text-primary text-base font-medium">Pink</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-mini-cart-data-inner-amount w-100">
+                                                    <div
+                                                        class="product-mini-cart-data d-flex justify-content-between text-base font-medium">
+                                                        <div
+                                                            class="product-mini-cart-data-inner-amount text-base font-medium text-primary d-flex align-items-center justify-content-between  w-100">
+                                                            <div class="text-primary text-base">₹10,500.00</div>
+        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="download-summary pt-4">
+                                        <p class="text-primary text-base font-medium mb-4">Product Summary</p>
+                                        <div class="text-base d-flex align-items-center justify-content-between w-100 mb-3">
+                                            <div class="text-secondary text-sm font-semibold">Subtotal</div>
+                                            <div class="text-primary text-sm font-medium">₹10,500.00</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100 mb-3">
+                                            <div class="text-secondary text-sm font-medium">Coupon discount</div>
+                                            <div class="text-primary text-sm font-medium">₹1,000</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100 mb-3">
+                                            <div class="text-secondary text-sm font-medium">Total</div>
+                                            <div class="text-primary text-sm font-medium">₹30,000.00</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100">
+                                            <div class="text-secondary text-sm font-semibold">Refundable amount</div>
+                                            <div class="text-primary text-sm font-medium">₹30,000.00</div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+
+                                <div class="download-wrapper">
+                                    <div class="product-mini-cart-wrapper">
+        
+                                        <div class="delivery d-flex gap-2 align-items-center mb-4">
+                                            <div class="delivery-icon">
+                                                <img src="assets/images/delivery-icon.png" alt="delivery">
+                                            </div>
+                                            <div class="delivery-icon">
+                                                <p class="mb-0 text-base font-medium text-primary">Delivered</p>
+                                                <p class="mb-0 text-sm font-medium text-secondary">On Sat, 19 Sep</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-mini-cart-details d-sm-flex gap-4 mb-4">
+                                            <div
+                                                class="product-mini-cart-img mb-2 mb-sm-0 d-flex align-items-center justify-content-center">
+                                                <img src="assets/images/icon/shoping-img.png" alt="cart-img img-fluid" />
+                                            </div>
+                                            <div
+                                                class="product-mini-cart-data d-flex justify-content-between flex-column w-100">
+                                                <div class="product-mini-cart-data-inner-content">
+                                                    <p class="text-base font-normal text-primary font-rufina mb-0">Olive
+                                                        Half-Daisies Chiffon
+                                                        Lehenaga</p>
+                                                    <div class="quantity text-base font-medium">
+                                                        <span class="text-secondary text-base font-medium me-2">Quantity:</span>
+                                                        <span class="text-primary text-base font-medium">1</span>
+                                                    </div>
+                                                    <div class="size text-base font-medium">
+                                                        <span class="text-secondary text-base font-medium me-2">Size:</span>
+                                                        <span class="text-primary text-base font-medium">S</span>
+                                                    </div>
+                                                    <div class="color text-base font-medium">
+                                                        <span class="text-secondary text-base font-medium me-2">Color:</span>
+                                                        <span class="text-primary text-base font-medium">Pink</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-mini-cart-data-inner-amount w-100">
+                                                    <div
+                                                        class="product-mini-cart-data d-flex justify-content-between text-base font-medium">
+                                                        <div
+                                                            class="product-mini-cart-data-inner-amount text-base font-medium text-primary d-flex align-items-center justify-content-between  w-100">
+                                                            <div class="text-primary text-base">₹10,500.00</div>
+        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="download-summary pt-4">
+                                        <p class="text-primary text-base font-medium mb-4">Product Summary</p>
+                                        <div class="text-base d-flex align-items-center justify-content-between w-100 mb-3">
+                                            <div class="text-secondary text-sm font-semibold">Subtotal</div>
+                                            <div class="text-primary text-sm font-medium">₹10,500.00</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100 mb-3">
+                                            <div class="text-secondary text-sm font-medium">Coupon discount</div>
+                                            <div class="text-primary text-sm font-medium">₹1,000</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100 mb-3">
+                                            <div class="text-secondary text-sm font-medium">Delivery</div>
+                                            <div class="text-primary text-sm font-medium">Free</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100">
+                                            <div class="text-secondary text-sm font-semibold">Total</div>
+                                            <div class="text-primary text-sm font-medium">₹30,000.00</div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+
+                                <div class="download-wrapper">
+                                    <div class="product-mini-cart-wrapper">
+        
+                                        <div class="delivery d-flex gap-2 align-items-center mb-4">
+                                            <div class="delivery-icon">
+                                                <img src="assets/images/delivery-icon.png" alt="delivery">
+                                            </div>
+                                            <div class="delivery-icon">
+                                                <p class="mb-0 text-base font-medium text-primary">Delivered</p>
+                                                <p class="mb-0 text-sm font-medium text-secondary">On Sat, 19 Sep</p>
+                                            </div>
+                                        </div>
+                                        <div class="product-mini-cart-details d-sm-flex gap-4 mb-4">
+                                            <div
+                                                class="product-mini-cart-img mb-2 mb-sm-0 d-flex align-items-center justify-content-center">
+                                                <img src="assets/images/icon/shoping-img.png" alt="cart-img img-fluid" />
+                                            </div>
+                                            <div
+                                                class="product-mini-cart-data d-flex justify-content-between flex-column w-100">
+                                                <div class="product-mini-cart-data-inner-content">
+                                                    <p class="text-base font-normal text-primary font-rufina mb-0">Olive
+                                                        Half-Daisies Chiffon
+                                                        Lehenaga</p>
+                                                    <div class="quantity text-base font-medium">
+                                                        <span class="text-secondary text-base font-medium me-2">Quantity:</span>
+                                                        <span class="text-primary text-base font-medium">1</span>
+                                                    </div>
+                                                    <div class="size text-base font-medium">
+                                                        <span class="text-secondary text-base font-medium me-2">Size:</span>
+                                                        <span class="text-primary text-base font-medium">S</span>
+                                                    </div>
+                                                    <div class="color text-base font-medium">
+                                                        <span class="text-secondary text-base font-medium me-2">Color:</span>
+                                                        <span class="text-primary text-base font-medium">Pink</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-mini-cart-data-inner-amount w-100">
+                                                    <div
+                                                        class="product-mini-cart-data d-flex justify-content-between text-base font-medium">
+                                                        <div
+                                                            class="product-mini-cart-data-inner-amount text-base font-medium text-primary d-flex align-items-center justify-content-between  w-100">
+                                                            <div class="text-primary text-base">₹10,500.00</div>
+        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="download-summary pt-4">
+                                        <p class="text-primary text-base font-medium mb-4">Product Summary</p>
+                                        <div class="text-base d-flex align-items-center justify-content-between w-100 mb-3">
+                                            <div class="text-secondary text-sm font-semibold">Subtotal</div>
+                                            <div class="text-primary text-sm font-medium">₹10,500.00</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100 mb-3">
+                                            <div class="text-secondary text-sm font-medium">Coupon discount</div>
+                                            <div class="text-primary text-sm font-medium">₹1,000</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100 mb-3">
+                                            <div class="text-secondary text-sm font-medium">Delivery</div>
+                                            <div class="text-primary text-sm font-medium">Free</div>
+                                        </div>
+                                        <div
+                                            class="text-base font-medium d-flex align-items-center justify-content-between w-100">
+                                            <div class="text-secondary text-sm font-semibold">Total</div>
+                                            <div class="text-primary text-sm font-medium">₹30,000.00</div>
+                                        </div>
+        
+                                    </div>
+                                </div>
 
                         </div>
                     </div>
@@ -349,8 +535,9 @@
         <!-- detail section end -->
     </main>
 
-    <!--*******Footer*********-->
-    <footer id="footer" class="footer-wrapper">
+    <!-- footer -->
+
+    <footer id="footer">
         <div class="container-fluid px-0 footer-wrap">
             
             <div class="bg-footer">
@@ -374,7 +561,7 @@
                                         <img src="assets/images/icon/call.png" class="w-20 me-2" />
                                         <span>+91 9826098260</span>
                                     </a>
-    
+
                                 </p>
                             </div>
                         </div>
@@ -386,12 +573,18 @@
                             </div>
                             <ul
                                 class="list-unstyled d-flex flex-wrap align-items-center justify-content-center gap-xxl-4 gap-2">
-                                <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Home</a></li>
-                                <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Women</a></li>
-                                <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Men</a></li>
-                                <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Edits</a></li>
-                                <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Kids</a></li>
-                                <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">About Us</a>
+                                <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Home</a>
+                                </li>
+                                <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Women</a>
+                                </li>
+                                <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Men</a>
+                                </li>
+                                <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Edits</a>
+                                </li>
+                                <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">Kids</a>
+                                </li>
+                                <li><a class="text-sm font-normal text-primary text-decoration-none" href="#">About
+                                        Us</a>
                                 </li>
                             </ul>
                             <hr class="separator text-center mx-auto my-3 w-290">
@@ -412,7 +605,8 @@
                             </ul>
                         </div>
                         <div class="col px-lg-3 text-center my-3 my-lg-0 footer-data3">
-                            <h3 class="font-normal text-lg px-3 font-rufina text-primary mb-3">Subscribe to our newsletter
+                            <h3 class="font-normal text-lg px-3 font-rufina text-primary mb-3">Subscribe to our
+                                newsletter
                                 to be the first to know about offers.</h3>
                             <div class="email-input position-relative mb-3 w-255 mx-auto">
                                 <input type="email"
@@ -420,7 +614,7 @@
                                     placeholder="EMAIL" />
                                 <button class="btn position-absolute p-0">
                                     <img src="assets/images/icon/email.png" alt="email" /></button>
-    
+
                             </div>
                             <div class="text-base text-normal text-primary">
                                 <p class="mb-1">Customer Service</p>
@@ -432,12 +626,11 @@
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
         </div>
     </footer>
-  </div>
 
     <div id="navigationSection">
         <div class="offcanvas offcanvas-start navigation-left" tabindex="-1" id="navigation"

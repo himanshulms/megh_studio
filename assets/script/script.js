@@ -25,7 +25,7 @@ $('#owl-carousel').owlCarousel({
         0: {
             items: 2
         },
-        600: {
+        991: {
             items: 4
         }
     }
@@ -43,7 +43,7 @@ $('#insta-carousel').owlCarousel({
         0: {
             items: 1
         },
-        600: {
+        991: {
             items: 3
         }
     }
@@ -82,6 +82,36 @@ $(function () {
 
     $('.eye-visible2').click(function(){
         $('.eye-visible2').toggle();
+        var $input = $(this).siblings('input'); // Get the sibling input element
+        if ($input.attr('type') === 'password') {
+            $input.attr('type', 'text'); // Change type to 'text' if it's 'password'
+        } else {
+            $input.attr('type', 'password'); // Change type to 'password' if it's 'text' or other
+        }
+    });
+
+    $('.eye-visible3').click(function(){
+        $('.eye-visible3').toggle();
+        var $input = $(this).siblings('input'); // Get the sibling input element
+        if ($input.attr('type') === 'password') {
+            $input.attr('type', 'text'); // Change type to 'text' if it's 'password'
+        } else {
+            $input.attr('type', 'password'); // Change type to 'password' if it's 'text' or other
+        }
+    });
+
+    $('.eye-visible4').click(function(){
+        $('.eye-visible4').toggle();
+        var $input = $(this).siblings('input'); // Get the sibling input element
+        if ($input.attr('type') === 'password') {
+            $input.attr('type', 'text'); // Change type to 'text' if it's 'password'
+        } else {
+            $input.attr('type', 'password'); // Change type to 'password' if it's 'text' or other
+        }
+    });
+
+    $('.eye-visible5').click(function(){
+        $('.eye-visible5').toggle();
         var $input = $(this).siblings('input'); // Get the sibling input element
         if ($input.attr('type') === 'password') {
             $input.attr('type', 'text'); // Change type to 'text' if it's 'password'
