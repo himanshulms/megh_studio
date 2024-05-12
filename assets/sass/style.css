@@ -1319,6 +1319,9 @@ section .main-heading {
   padding-left: 24px;
   padding-right: 24px;
 }
+.custom-dropdown .dropdown-menu .dropdown-menu-inner a.dropdown-item:hover, .custom-dropdown .dropdown-menu .dropdown-menu-inner a.dropdown-item:focus, .custom-dropdown .dropdown-menu .dropdown-menu-inner a.dropdown-item:active, .custom-dropdown .dropdown-menu .dropdown-menu-inner a.dropdown-item.active {
+  background-color: #EEE8E4;
+}
 .custom-dropdown.shopping-wrapper .shopping-wrapper-inner {
   padding: 30px 24px;
   min-width: 500px;
@@ -1414,6 +1417,7 @@ section .main-heading {
   width: 244px;
   padding: 0;
   margin-top: 10px !important;
+  margin-left: 20px !important;
 }
 .sortby-dropdown ul.nav-dropdown li.dropdown ul.dropdown-menu li,
 .custom-dropdown-data ul.nav-dropdown li.dropdown ul.dropdown-menu li {
@@ -1627,7 +1631,6 @@ section .main-heading {
   font-family: inherit;
   border-radius: 0;
   padding: 12px;
-  color: #3A332B;
 }
 @media (max-width: 991px) {
   .btn {
@@ -1642,14 +1645,11 @@ section .main-heading {
 }
 .btn.btn-outline {
   width: 180px;
-  height: 45px;
   cursor: pointer;
   background: transparent;
   outline: none;
-  font-weight: 500;
-  font-size: 16px;
+  border: 1px solid #CDCDCD !important;
   line-height: 16.9px;
-  color: #3A332B;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1795,7 +1795,6 @@ button:focus:not(:focus-visible),
   transition: 0.3s all;
 }
 
-/*******************hover on the button*******************/
 /*******************button hover *****************/
 .btn {
   border-radius: 0;
@@ -1837,4 +1836,13 @@ button:focus:not(:focus-visible),
 }
 .btn.btn-insta:hover .white {
   display: inline-block;
+}
+
+.user-wrapper .dropdown-menu-inner.dropdown-item:focus, .user-wrapper .dropdown-menu-inner.dropdown-item:hover, .user-wrapper .dropdown-menu-inner.dropdown-item:active {
+  background-color: transparent;
+  color: #3A332B;
+}
+.user-wrapper .dropdown-menu-inner .dropdown-item:focus, .user-wrapper .dropdown-menu-inner .dropdown-item:hover, .user-wrapper .dropdown-menu-inner .dropdown-item:active {
+  background-color: #EEE8E4;
+  color: #3A332B;
 }/*# sourceMappingURL=style.css.map */
