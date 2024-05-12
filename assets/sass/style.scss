@@ -37,6 +37,11 @@ body {
         .header-wrapper {
             flex       : 0 1 auto;
             background-color: $white;
+            .col-2 {
+                img {
+                    margin-left: -4px;
+                }
+            }
         }
         .main-wrapper {
             padding-top:100px;
@@ -2013,8 +2018,7 @@ button:focus:not(:focus-visible),
     position: relative;
     text-decoration: none;
     transition: .2s transform ease-in-out;
-    z-index: 0;
-    
+    z-index: 0;    
     &::after {
       background-color: $primary-color !important;
       color: $white !important;
@@ -2037,5 +2041,14 @@ button:focus:not(:focus-visible),
     &:hover {
       border: 2px solid transparent;
       transform: scale(1.05);color: $white !important;
-      }
     }
+    &.btn-white-bg {
+        &::after {
+            background-color: $white !important;
+            color: $primary-color !important;
+        }
+        &:hover {
+            color: $primary-color !important;
+          }
+    }
+}
