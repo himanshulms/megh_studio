@@ -1861,7 +1861,16 @@ section {
                     font-size: $text-base;
                     font-weight: $font-normal;
                     color: $primary-color;
-                    text-decoration: none;
+                    text-decoration: none;position: relative;
+                    &::after {
+                        display: block;
+                        content: '';
+                        border-bottom: solid 3px $primary-color;
+                        transform: scaleX(0);
+                        transition: transform 750ms ease-in-out;
+                        transform-origin: 0% 50%;
+                      }
+                      &:hover:after { transform: scaleX(1); }
                 }
             }
         }

@@ -1501,6 +1501,18 @@ section .main-heading {
   font-weight: 400;
   color: #3A332B;
   text-decoration: none;
+  position: relative;
+}
+.footer-wrap .footer-top ul li a::after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #3A332B;
+  transform: scaleX(0);
+  transition: transform 750ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+.footer-wrap .footer-top ul li a:hover:after {
+  transform: scaleX(1);
 }
 .footer-wrap .bg-footer {
   padding: 40px;
