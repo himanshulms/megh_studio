@@ -25,6 +25,9 @@ body .wrapper .header-wrapper {
   flex: 0 1 auto;
   background-color: #ffffff;
 }
+body .wrapper .header-wrapper .col-2 img {
+  margin-left: -4px;
+}
 body .wrapper .main-wrapper {
   padding-top: 100px;
   flex: 1 1 auto;
@@ -1512,4 +1515,11 @@ button:focus:not(:focus-visible),
   border: 2px solid transparent;
   transform: scale(1.05);
   color: #ffffff !important;
+}
+.btn.btn-white-bg::after {
+  background-color: #ffffff !important;
+  color: #3A332B !important;
+}
+.btn.btn-white-bg:hover {
+  color: #3A332B !important;
 }/*# sourceMappingURL=style.css.map */
