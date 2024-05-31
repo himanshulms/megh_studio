@@ -1777,4 +1777,8 @@ section .main-heading {
 .user-wrapper .dropdown-menu-inner .dropdown-item:focus, .user-wrapper .dropdown-menu-inner .dropdown-item:hover, .user-wrapper .dropdown-menu-inner .dropdown-item:active {
   background-color: #EEE8E4;
   color: #3A332B;
+}
+
+.checkout-section .btn:before {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

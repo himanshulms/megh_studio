@@ -2264,3 +2264,11 @@ section {
         }
     }
 }
+
+.checkout-section {
+    .btn{
+        &:before{
+            display: none;
+        }
+    }
+}
