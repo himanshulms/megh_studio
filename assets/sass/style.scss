@@ -1792,7 +1792,9 @@ section {
                     font-weight: $font-medium;
                     color: $primary-color;
                     padding-bottom: 24px;
-
+                    &:hover{
+                        font-weight: $font-semibold;
+                    }
                     &.menu-item-has-children {
                         img {
                             transform: rotate(180deg);
